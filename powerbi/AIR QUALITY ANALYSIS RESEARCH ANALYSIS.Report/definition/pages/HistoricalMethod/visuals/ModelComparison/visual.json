@@ -1,0 +1,252 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "ModelComparison",
+  "position": {
+    "x": 648,
+    "y": 145,
+    "z": 0,
+    "width": 608,
+    "height": 190,
+    "tabOrder": 2098
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "drillFilterOtherVisuals": true,
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "BaselineModels"
+                    }
+                  },
+                  "Property": "Model"
+                }
+              },
+              "queryRef": "BaselineModels.Model",
+              "nativeQueryRef": "Model"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "BaselineModels"
+                    }
+                  },
+                  "Property": "ResponseScale"
+                }
+              },
+              "queryRef": "BaselineModels.ResponseScale",
+              "nativeQueryRef": "ResponseScale"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "BaselineModels"
+                    }
+                  },
+                  "Property": "n"
+                }
+              },
+              "queryRef": "BaselineModels.n",
+              "nativeQueryRef": "n"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "BaselineModels"
+                    }
+                  },
+                  "Property": "R²"
+                }
+              },
+              "queryRef": "BaselineModels.R²",
+              "nativeQueryRef": "R²"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "BaselineModels"
+                    }
+                  },
+                  "Property": "Adjusted R²"
+                }
+              },
+              "queryRef": "BaselineModels.Adjusted R²",
+              "nativeQueryRef": "Adjusted R²"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "BaselineModels"
+                    }
+                  },
+                  "Property": "AIC"
+                }
+              },
+              "queryRef": "BaselineModels.AIC",
+              "nativeQueryRef": "AIC"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "BaselineModels"
+                    }
+                  },
+                  "Property": "BIC"
+                }
+              },
+              "queryRef": "BaselineModels.BIC",
+              "nativeQueryRef": "BIC"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "BaselineModels"
+                    }
+                  },
+                  "Property": "RMSE"
+                }
+              },
+              "queryRef": "BaselineModels.RMSE",
+              "nativeQueryRef": "RMSE"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "BaselineModels"
+                    }
+                  },
+                  "Property": "Residual Shapiro p"
+                }
+              },
+              "queryRef": "BaselineModels.Residual Shapiro p",
+              "nativeQueryRef": "Residual Shapiro p"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Simple, multiple and log-response OLS (scales differ)'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#15394B'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#DCE6EB'"
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

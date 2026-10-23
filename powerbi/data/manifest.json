@@ -1,0 +1,31 @@
+{
+  "generatedUTC": "2026-10-23T04:40:27.272753+00:00",
+  "mode": "Dated embedded research snapshot; not unattended live data",
+  "locations": 47,
+  "tables": {
+    "Locations": 47,
+    "LocationSummary": 47,
+    "History": 4230,
+    "Validation": 1081,
+    "Forecast": 329,
+    "ModelParameters": 47,
+    "Provenance": 235,
+    "Baseline": 111,
+    "BaselineModels": 3,
+    "MissingData": 3,
+    "BaselineSensitivity": 3,
+    "Normality": 4,
+    "BaselineVIF": 3,
+    "BaselineCoefficients": 4,
+    "Correlations": 32,
+    "Decisions": 6,
+    "Threshold": 81,
+    "ScenarioTemperature": 61,
+    "ScenarioWind": 61,
+    "ScenarioSolar": 46,
+    "ScenarioPresets": 3,
+    "ConfusionLabels": 4,
+    "Audience": 8
+  },
+  "source": "Real timestamped API snapshots in data/sample; Python OLS from src/modeling.py"
+}

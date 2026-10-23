@@ -1,0 +1,7 @@
+Risk Tier,Trigger,Action,Decision-Maker,Success Metric
+Moderate,"Predicted ≥50 ppb; review heat, calm wind and sunlight",Prepare multilingual sensitive-group messages,Public health,Message reach
+High,"Predicted ≥60 ppb; review heat, calm wind and sunlight",Review respiratory staffing and surge plans,Hospitals,ER waiting time
+High,"Predicted ≥60 ppb; review heat, calm wind and sunlight",Plan indoor alternatives using official AQHI,Schools / daycares,Exposure hours avoided
+High,"Predicted ≥60 ppb; review heat, calm wind and sunlight",Review breaks and rescheduling options,Outdoor employers,Worker exposure hours
+Very High,"Predicted ≥70 ppb; review heat, calm wind and sunlight",Coordinate transit messaging and anti-idling,City operations,Idling minutes
+Moderate,"Predicted ≥50 ppb; review heat, calm wind and sunlight",Review inhaler stock with clinical leadership,Pharmacies,Stock-out rate

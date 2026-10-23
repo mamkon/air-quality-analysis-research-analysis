@@ -1,0 +1,119 @@
+// Selected Location
+Selected Location = SELECTEDVALUE(Locations[Location], "Select one Ontario location")
+
+// Snapshot Forecast Date
+Snapshot Forecast Date = SELECTEDVALUE(LocationSummary[ForecastDate], "Select one location")
+
+// Latest Ozone ppb
+Latest Ozone ppb = IF(HASONEVALUE(Locations[Location]), MAX(LocationSummary[LatestOzone]))
+
+// Forecast Ozone ppb
+Forecast Ozone ppb = IF(HASONEVALUE(Locations[Location]), MAX(LocationSummary[ForecastOzone]))
+
+// Illustrative Risk Tier
+Illustrative Risk Tier = SELECTEDVALUE(LocationSummary[RiskTier], "Select one location")
+
+// Official AQHI
+Official AQHI = IF(HASONEVALUE(Locations[Location]), MAX(LocationSummary[AQHI]))
+
+// Model Adjusted R2
+Model Adjusted R2 = IF(HASONEVALUE(Locations[Location]), MAX(LocationSummary[AdjustedR2]))
+
+// Heldout RMSE ppb
+Heldout RMSE ppb = IF(HASONEVALUE(Locations[Location]), MAX(LocationSummary[HeldoutRMSE]))
+
+// Training Days
+Training Days = IF(HASONEVALUE(Locations[Location]), MAX(LocationSummary[TrainingDays]))
+
+// Validation Days
+Validation Days = COUNTROWS(Validation)
+
+// Forecast Mean
+Forecast Mean = IF(HASONEVALUE(Locations[Location]), AVERAGE(Forecast[PredictedOzone]))
+
+// Forecast Lower 95
+Forecast Lower 95 = IF(HASONEVALUE(Locations[Location]), AVERAGE(Forecast[Lower95]))
+
+// Forecast Upper 95
+Forecast Upper 95 = IF(HASONEVALUE(Locations[Location]), AVERAGE(Forecast[Upper95]))
+
+// Reference Ozone
+Reference Ozone = IF(HASONEVALUE(Locations[Location]), AVERAGE(Validation[ActualOzone]))
+
+// Heldout Prediction
+Heldout Prediction = IF(HASONEVALUE(Locations[Location]), AVERAGE(Validation[PredictedOzone]))
+
+// Rolling RMSE
+Rolling RMSE = IF(HASONEVALUE(Locations[Location]), AVERAGE(Validation[RollingRMSE]))
+
+// Residual ppb
+Residual ppb = AVERAGE(Validation[Residual])
+
+// High Cutoff ppb
+High Cutoff ppb = SELECTEDVALUE(Threshold[Value], 60)
+
+// True Positives
+True Positives = COUNTROWS(FILTER(Validation, Validation[ActualOzone] >= [High Cutoff ppb] && Validation[PredictedOzone] >= [High Cutoff ppb]))
+
+// False Positives
+False Positives = COUNTROWS(FILTER(Validation, Validation[ActualOzone] < [High Cutoff ppb] && Validation[PredictedOzone] >= [High Cutoff ppb]))
+
+// False Negatives
+False Negatives = COUNTROWS(FILTER(Validation, Validation[ActualOzone] >= [High Cutoff ppb] && Validation[PredictedOzone] < [High Cutoff ppb]))
+
+// True Negatives
+True Negatives = COUNTROWS(FILTER(Validation, Validation[ActualOzone] < [High Cutoff ppb] && Validation[PredictedOzone] < [High Cutoff ppb]))
+
+// Precision
+Precision = DIVIDE([True Positives], [True Positives] + [False Positives])
+
+// Recall
+Recall = DIVIDE([True Positives], [True Positives] + [False Negatives])
+
+// False Alarm Rate
+False Alarm Rate = DIVIDE([False Positives], [False Positives] + [True Negatives])
+
+// Missed Event Rate
+Missed Event Rate = DIVIDE([False Negatives], [False Negatives] + [True Positives])
+
+// Event Support
+Event Support = [True Positives] + [False Negatives]
+
+// Confusion Count
+Confusion Count = SWITCH(SELECTEDVALUE(ConfusionLabels[Outcome]), "TP", [True Positives], "FP", [False Positives], "FN", [False Negatives], "TN", [True Negatives])
+
+// Scenario Temp C
+Scenario Temp C = SELECTEDVALUE(ScenarioTemperature[Value], SELECTEDVALUE(ScenarioPresets[Temperature], 26))
+
+// Scenario Wind kmh
+Scenario Wind kmh = SELECTEDVALUE(ScenarioWind[Value], SELECTEDVALUE(ScenarioPresets[Wind], 13))
+
+// Scenario Solar Wm2
+Scenario Solar Wm2 = SELECTEDVALUE(ScenarioSolar[Value], SELECTEDVALUE(ScenarioPresets[Solar], 230))
+
+// Scenario Prediction ppb
+Scenario Prediction ppb = IF(HASONEVALUE(Locations[Location]), MAX(ModelParameters[Intercept]) + MAX(ModelParameters[TempCoef])*[Scenario Temp C] + MAX(ModelParameters[WindCoef])*[Scenario Wind kmh] + MAX(ModelParameters[SolarCoef])*[Scenario Solar Wm2]*0.0864)
+
+// Scenario Half Width
+Scenario Half Width = VAR t = [Scenario Temp C] VAR w = [Scenario Wind kmh] VAR s = [Scenario Solar Wm2]*0.0864 VAR h = MAX(ModelParameters[Inv00]) + 2*t*MAX(ModelParameters[Inv01]) + 2*w*MAX(ModelParameters[Inv02]) + 2*s*MAX(ModelParameters[Inv03]) + t*t*MAX(ModelParameters[Inv11]) + 2*t*w*MAX(ModelParameters[Inv12]) + 2*t*s*MAX(ModelParameters[Inv13]) + w*w*MAX(ModelParameters[Inv22]) + 2*w*s*MAX(ModelParameters[Inv23]) + s*s*MAX(ModelParameters[Inv33]) RETURN IF(HASONEVALUE(Locations[Location]), MAX(ModelParameters[TCritical])*MAX(ModelParameters[ResidualSigma])*SQRT(MAX(0,1+h)))
+
+// Scenario Lower 95
+Scenario Lower 95 = [Scenario Prediction ppb] - [Scenario Half Width]
+
+// Scenario Upper 95
+Scenario Upper 95 = [Scenario Prediction ppb] + [Scenario Half Width]
+
+// Scenario Tier
+Scenario Tier = VAR p = [Scenario Prediction ppb] RETURN IF(ISBLANK(p), "Select one location", SWITCH(TRUE(), p<0, "Unavailable", p<50, "Good", p<60, "Moderate", p<70, "High", "Very High"))
+
+// Scenario Extrapolation
+Scenario Extrapolation = IF([Scenario Temp C]<MAX(ModelParameters[MinTemp]) || [Scenario Temp C]>MAX(ModelParameters[MaxTemp]) || [Scenario Wind kmh]<MAX(ModelParameters[MinWind]) || [Scenario Wind kmh]>MAX(ModelParameters[MaxWind]) || [Scenario Solar Wm2]*0.0864<MAX(ModelParameters[MinSolar]) || [Scenario Solar Wm2]*0.0864>MAX(ModelParameters[MaxSolar]), "Outside training range", "Within marginal training ranges")
+
+// Baseline Mean Ozone
+Baseline Mean Ozone = AVERAGE(Baseline[ozone])
+
+// Baseline Mean Temperature
+Baseline Mean Temperature = AVERAGE(Baseline[temp])
+
+// Baseline Residual
+Baseline Residual = AVERAGE(Baseline[Residual])

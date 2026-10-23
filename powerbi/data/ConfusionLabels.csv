@@ -1,0 +1,5 @@
+Actual,Predicted,Outcome
+Event,Alert,TP
+Event,No alert,FN
+Non-event,Alert,FP
+Non-event,No alert,TN

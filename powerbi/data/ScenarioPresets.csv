@@ -1,0 +1,4 @@
+Scenario,Temperature,Wind,Solar
+"Hot, calm, sunny",33,5,300
+Cool and windy,17,25,140
+Typical summer day,26,13,230

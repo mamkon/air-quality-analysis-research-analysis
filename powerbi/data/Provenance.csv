@@ -1,0 +1,236 @@
+Location,Source,RetrievedUTC,URL
+Toronto,Weather archive,2026-10-23T00:46:50.004050+00:00,https://archive-api.open-meteo.com/v1/archive
+Toronto,Weather forecast,2026-10-23T00:46:49.130988+00:00,https://api.open-meteo.com/v1/forecast
+Toronto,CAMS ozone,2026-10-23T00:46:50.608308+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Toronto,Local AQHI observations,2026-10-23T01:59:37.545591+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+Toronto,Local AQHI forecasts,2026-10-23T01:59:37.711362+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+Barrie,Weather archive,2026-10-23T01:59:38.808581+00:00,https://archive-api.open-meteo.com/v1/archive
+Barrie,Weather forecast,2026-10-23T01:59:37.892558+00:00,https://api.open-meteo.com/v1/forecast
+Barrie,CAMS ozone,2026-10-23T01:59:39.366031+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Barrie,Local AQHI observations,2026-10-23T01:59:39.542471+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+Barrie,Local AQHI forecasts,2026-10-23T01:59:39.727082+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+Belleville,Weather archive,2026-10-23T01:59:39.529088+00:00,https://archive-api.open-meteo.com/v1/archive
+Belleville,Weather forecast,2026-10-23T01:59:37.926921+00:00,https://api.open-meteo.com/v1/forecast
+Belleville,CAMS ozone,2026-10-23T01:59:40.065763+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Belleville,Local AQHI observations,2026-10-23T01:59:40.237287+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+Belleville,Local AQHI forecasts,2026-10-23T01:59:40.418235+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+Brampton,Weather archive,2026-10-23T00:46:58.807767+00:00,https://archive-api.open-meteo.com/v1/archive
+Brampton,Weather forecast,2026-10-23T00:46:58.021424+00:00,https://api.open-meteo.com/v1/forecast
+Brampton,CAMS ozone,2026-10-23T00:46:59.387102+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Brampton,Local AQHI observations,2026-10-23T01:59:37.873929+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+Brampton,Local AQHI forecasts,2026-10-23T01:59:38.027892+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+Brantford,Weather archive,2026-10-23T01:59:39.901671+00:00,https://archive-api.open-meteo.com/v1/archive
+Brantford,Weather forecast,2026-10-23T01:59:39.184608+00:00,https://api.open-meteo.com/v1/forecast
+Brantford,CAMS ozone,2026-10-23T01:59:40.464948+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Brantford,Local AQHI observations,2026-10-23T01:59:40.627319+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+Brantford,Local AQHI forecasts,2026-10-23T01:59:40.846422+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+Burlington,Weather archive,2026-10-23T01:59:41.165539+00:00,https://archive-api.open-meteo.com/v1/archive
+Burlington,Weather forecast,2026-10-23T01:59:40.306888+00:00,https://api.open-meteo.com/v1/forecast
+Burlington,CAMS ozone,2026-10-23T01:59:41.708619+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Burlington,Local AQHI observations,2026-10-23T01:59:41.907377+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+Burlington,Local AQHI forecasts,2026-10-23T01:59:42.077596+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+Chatham,Weather archive,2026-10-23T01:59:41.890978+00:00,https://archive-api.open-meteo.com/v1/archive
+Chatham,Weather forecast,2026-10-23T01:59:41.038952+00:00,https://api.open-meteo.com/v1/forecast
+Chatham,CAMS ozone,2026-10-23T01:59:42.438026+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Chatham,Local AQHI observations,2026-10-23T01:59:42.614498+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+Chatham,Local AQHI forecasts,2026-10-23T01:59:42.776091+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+Cornwall,Weather archive,2026-10-23T01:59:42.172481+00:00,https://archive-api.open-meteo.com/v1/archive
+Cornwall,Weather forecast,2026-10-23T01:59:41.431997+00:00,https://api.open-meteo.com/v1/forecast
+Cornwall,CAMS ozone,2026-10-23T01:59:42.700150+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Cornwall,Local AQHI observations,2026-10-23T01:59:42.846782+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+Cornwall,Local AQHI forecasts,2026-10-23T01:59:43.021842+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+Dorset,Weather archive,2026-10-23T01:59:43.377847+00:00,https://archive-api.open-meteo.com/v1/archive
+Dorset,Weather forecast,2026-10-23T01:59:42.659002+00:00,https://api.open-meteo.com/v1/forecast
+Dorset,CAMS ozone,2026-10-23T01:59:43.973570+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Dorset,Local AQHI observations,2026-10-23T01:59:44.163143+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+Dorset,Local AQHI forecasts,2026-10-23T01:59:44.337362+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+Dryden,Weather archive,2026-10-23T01:59:44.139733+00:00,https://archive-api.open-meteo.com/v1/archive
+Dryden,Weather forecast,2026-10-23T01:59:43.384205+00:00,https://api.open-meteo.com/v1/forecast
+Dryden,CAMS ozone,2026-10-23T01:59:44.699347+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Dryden,Local AQHI observations,Not configured,https://api.weather.gc.ca/collections/aqhi-stations/items
+Dryden,Local AQHI forecasts,Not configured,https://api.weather.gc.ca/collections/aqhi-stations/items
+Fort Severn,Weather archive,2026-10-23T01:59:44.329396+00:00,https://archive-api.open-meteo.com/v1/archive
+Fort Severn,Weather forecast,2026-10-23T01:59:43.625190+00:00,https://api.open-meteo.com/v1/forecast
+Fort Severn,CAMS ozone,2026-10-23T01:59:44.908478+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Fort Severn,Local AQHI observations,Not configured,https://api.weather.gc.ca/collections/aqhi-stations/items
+Fort Severn,Local AQHI forecasts,Not configured,https://api.weather.gc.ca/collections/aqhi-stations/items
+Grand Bend,Weather archive,2026-10-23T01:59:45.706974+00:00,https://archive-api.open-meteo.com/v1/archive
+Grand Bend,Weather forecast,2026-10-23T01:59:44.900750+00:00,https://api.open-meteo.com/v1/forecast
+Grand Bend,CAMS ozone,2026-10-23T01:59:46.268012+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Grand Bend,Local AQHI observations,2026-10-23T01:59:46.436135+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+Grand Bend,Local AQHI forecasts,2026-10-23T01:59:46.669643+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+Guelph,Weather archive,2026-10-23T01:59:46.071999+00:00,https://archive-api.open-meteo.com/v1/archive
+Guelph,Weather forecast,2026-10-23T01:59:45.298364+00:00,https://api.open-meteo.com/v1/forecast
+Guelph,CAMS ozone,2026-10-23T01:59:46.650054+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Guelph,Local AQHI observations,2026-10-23T01:59:46.811632+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+Guelph,Local AQHI forecasts,2026-10-23T01:59:47.029868+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+Hamilton,Weather archive,2026-10-23T00:46:56.875983+00:00,https://archive-api.open-meteo.com/v1/archive
+Hamilton,Weather forecast,2026-10-23T00:46:55.194637+00:00,https://api.open-meteo.com/v1/forecast
+Hamilton,CAMS ozone,2026-10-23T00:46:57.419865+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Hamilton,Local AQHI observations,2026-10-23T01:59:45.086651+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+Hamilton,Local AQHI forecasts,2026-10-23T01:59:45.258048+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+Hamilton Downtown,Weather archive,2026-10-23T01:59:46.635071+00:00,https://archive-api.open-meteo.com/v1/archive
+Hamilton Downtown,Weather forecast,2026-10-23T01:59:45.880509+00:00,https://api.open-meteo.com/v1/forecast
+Hamilton Downtown,CAMS ozone,2026-10-23T01:59:47.243092+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Hamilton Downtown,Local AQHI observations,2026-10-23T01:59:47.447347+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+Hamilton Downtown,Local AQHI forecasts,2026-10-23T01:59:47.627620+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+Hamilton Mountain,Weather archive,2026-10-23T01:59:48.114894+00:00,https://archive-api.open-meteo.com/v1/archive
+Hamilton Mountain,Weather forecast,2026-10-23T01:59:47.290152+00:00,https://api.open-meteo.com/v1/forecast
+Hamilton Mountain,CAMS ozone,2026-10-23T01:59:48.626047+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Hamilton Mountain,Local AQHI observations,2026-10-23T01:59:48.849796+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+Hamilton Mountain,Local AQHI forecasts,2026-10-23T01:59:49.077490+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+Hamilton West,Weather archive,2026-10-23T01:59:48.461895+00:00,https://archive-api.open-meteo.com/v1/archive
+Hamilton West,Weather forecast,2026-10-23T01:59:47.646639+00:00,https://api.open-meteo.com/v1/forecast
+Hamilton West,CAMS ozone,2026-10-23T01:59:49.030996+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Hamilton West,Local AQHI observations,2026-10-23T01:59:49.203217+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+Hamilton West,Local AQHI forecasts,2026-10-23T01:59:49.371088+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+Kenora,Weather archive,2026-10-23T01:59:49.067907+00:00,https://archive-api.open-meteo.com/v1/archive
+Kenora,Weather forecast,2026-10-23T01:59:48.324138+00:00,https://api.open-meteo.com/v1/forecast
+Kenora,CAMS ozone,2026-10-23T01:59:49.638671+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Kenora,Local AQHI observations,Not configured,https://api.weather.gc.ca/collections/aqhi-stations/items
+Kenora,Local AQHI forecasts,Not configured,https://api.weather.gc.ca/collections/aqhi-stations/items
+Kingston,Weather archive,2026-10-23T01:59:50.466740+00:00,https://archive-api.open-meteo.com/v1/archive
+Kingston,Weather forecast,2026-10-23T01:59:49.703617+00:00,https://api.open-meteo.com/v1/forecast
+Kingston,CAMS ozone,2026-10-23T01:59:51.002885+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Kingston,Local AQHI observations,2026-10-23T01:59:51.178019+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+Kingston,Local AQHI forecasts,2026-10-23T01:59:51.361254+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+Kitchener,Weather archive,2026-10-23T01:59:50.770615+00:00,https://archive-api.open-meteo.com/v1/archive
+Kitchener,Weather forecast,2026-10-23T01:59:50.046947+00:00,https://api.open-meteo.com/v1/forecast
+Kitchener,CAMS ozone,2026-10-23T01:59:51.320038+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Kitchener,Local AQHI observations,2026-10-23T01:59:51.482576+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+Kitchener,Local AQHI forecasts,2026-10-23T01:59:51.707139+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+London,Weather archive,2026-10-23T01:59:51.198275+00:00,https://archive-api.open-meteo.com/v1/archive
+London,Weather forecast,2026-10-23T01:59:50.363752+00:00,https://api.open-meteo.com/v1/forecast
+London,CAMS ozone,2026-10-23T01:59:52.281488+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+London,Local AQHI observations,2026-10-23T01:59:52.532995+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+London,Local AQHI forecasts,2026-10-23T01:59:52.738225+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+Milton,Weather archive,2026-10-23T01:59:52.729459+00:00,https://archive-api.open-meteo.com/v1/archive
+Milton,Weather forecast,2026-10-23T01:59:51.934943+00:00,https://api.open-meteo.com/v1/forecast
+Milton,CAMS ozone,2026-10-23T01:59:53.313954+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Milton,Local AQHI observations,2026-10-23T01:59:53.478780+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+Milton,Local AQHI forecasts,2026-10-23T01:59:53.703046+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+Mississauga,Weather archive,2026-10-23T00:46:52.021398+00:00,https://archive-api.open-meteo.com/v1/archive
+Mississauga,Weather forecast,2026-10-23T00:46:51.268203+00:00,https://api.open-meteo.com/v1/forecast
+Mississauga,CAMS ozone,2026-10-23T00:46:52.539502+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Mississauga,Local AQHI observations,2026-10-23T01:59:51.883100+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+Mississauga,Local AQHI forecasts,2026-10-23T01:59:52.128507+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+Moosonee,Weather archive,2026-10-23T01:59:53.635192+00:00,https://archive-api.open-meteo.com/v1/archive
+Moosonee,Weather forecast,2026-10-23T01:59:52.869405+00:00,https://api.open-meteo.com/v1/forecast
+Moosonee,CAMS ozone,2026-10-23T01:59:54.188257+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Moosonee,Local AQHI observations,Not configured,https://api.weather.gc.ca/collections/aqhi-stations/items
+Moosonee,Local AQHI forecasts,Not configured,https://api.weather.gc.ca/collections/aqhi-stations/items
+Newmarket,Weather archive,2026-10-23T01:59:54.131535+00:00,https://archive-api.open-meteo.com/v1/archive
+Newmarket,Weather forecast,2026-10-23T01:59:53.359373+00:00,https://api.open-meteo.com/v1/forecast
+Newmarket,CAMS ozone,2026-10-23T01:59:54.767024+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Newmarket,Local AQHI observations,2026-10-23T01:59:54.956857+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+Newmarket,Local AQHI forecasts,2026-10-23T01:59:55.125563+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+North Bay,Weather archive,2026-10-23T01:59:55.220013+00:00,https://archive-api.open-meteo.com/v1/archive
+North Bay,Weather forecast,2026-10-23T01:59:54.447618+00:00,https://api.open-meteo.com/v1/forecast
+North Bay,CAMS ozone,2026-10-23T01:59:55.761072+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+North Bay,Local AQHI observations,2026-10-23T01:59:55.959736+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+North Bay,Local AQHI forecasts,2026-10-23T01:59:56.148472+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+Oakville,Weather archive,2026-10-23T00:46:53.853664+00:00,https://archive-api.open-meteo.com/v1/archive
+Oakville,Weather forecast,2026-10-23T00:46:53.163229+00:00,https://api.open-meteo.com/v1/forecast
+Oakville,CAMS ozone,2026-10-23T00:46:54.585875+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Oakville,Local AQHI observations,2026-10-23T01:59:54.492007+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+Oakville,Local AQHI forecasts,2026-10-23T01:59:54.697756+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+Oshawa,Weather archive,2026-10-23T01:59:55.997953+00:00,https://archive-api.open-meteo.com/v1/archive
+Oshawa,Weather forecast,2026-10-23T01:59:55.296732+00:00,https://api.open-meteo.com/v1/forecast
+Oshawa,CAMS ozone,2026-10-23T01:59:56.548155+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Oshawa,Local AQHI observations,2026-10-23T01:59:56.800755+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+Oshawa,Local AQHI forecasts,2026-10-23T01:59:56.998595+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+Ottawa,Weather archive,2026-10-23T01:59:56.564073+00:00,https://archive-api.open-meteo.com/v1/archive
+Ottawa,Weather forecast,2026-10-23T01:59:55.779528+00:00,https://api.open-meteo.com/v1/forecast
+Ottawa,CAMS ozone,2026-10-23T01:59:57.120762+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Ottawa,Local AQHI observations,2026-10-23T01:59:57.289887+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+Ottawa,Local AQHI forecasts,2026-10-23T01:59:57.469041+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+Parry Sound,Weather archive,2026-10-23T01:59:57.571849+00:00,https://archive-api.open-meteo.com/v1/archive
+Parry Sound,Weather forecast,2026-10-23T01:59:56.811452+00:00,https://api.open-meteo.com/v1/forecast
+Parry Sound,CAMS ozone,2026-10-23T01:59:58.114894+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Parry Sound,Local AQHI observations,2026-10-23T01:59:58.276804+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+Parry Sound,Local AQHI forecasts,2026-10-23T01:59:58.437482+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+Peterborough,Weather archive,2026-10-23T01:59:58.418602+00:00,https://archive-api.open-meteo.com/v1/archive
+Peterborough,Weather forecast,2026-10-23T01:59:57.643584+00:00,https://api.open-meteo.com/v1/forecast
+Peterborough,CAMS ozone,2026-10-23T01:59:58.981750+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Peterborough,Local AQHI observations,2026-10-23T01:59:59.154643+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+Peterborough,Local AQHI forecasts,2026-10-23T01:59:59.382475+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+Port Stanley,Weather archive,2026-10-23T01:59:58.911792+00:00,https://archive-api.open-meteo.com/v1/archive
+Port Stanley,Weather forecast,2026-10-23T01:59:58.131907+00:00,https://api.open-meteo.com/v1/forecast
+Port Stanley,CAMS ozone,2026-10-23T01:59:59.445984+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Port Stanley,Local AQHI observations,2026-10-23T01:59:59.684286+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+Port Stanley,Local AQHI forecasts,2026-10-23T01:59:59.864964+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+Sarnia,Weather archive,2026-10-23T01:59:59.881518+00:00,https://archive-api.open-meteo.com/v1/archive
+Sarnia,Weather forecast,2026-10-23T01:59:59.112947+00:00,https://api.open-meteo.com/v1/forecast
+Sarnia,CAMS ozone,2026-10-23T02:00:00.478486+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Sarnia,Local AQHI observations,2026-10-23T02:00:00.617737+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+Sarnia,Local AQHI forecasts,2026-10-23T02:00:00.796015+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+Sault Ste. Marie,Weather archive,2026-10-23T02:00:00.843521+00:00,https://archive-api.open-meteo.com/v1/archive
+Sault Ste. Marie,Weather forecast,2026-10-23T02:00:00.066082+00:00,https://api.open-meteo.com/v1/forecast
+Sault Ste. Marie,CAMS ozone,2026-10-23T02:00:01.400973+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Sault Ste. Marie,Local AQHI observations,2026-10-23T02:00:01.601755+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+Sault Ste. Marie,Local AQHI forecasts,2026-10-23T02:00:01.833405+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+Sioux Lookout,Weather archive,2026-10-23T02:00:01.442162+00:00,https://archive-api.open-meteo.com/v1/archive
+Sioux Lookout,Weather forecast,2026-10-23T02:00:00.683302+00:00,https://api.open-meteo.com/v1/forecast
+Sioux Lookout,CAMS ozone,2026-10-23T02:00:02.015810+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Sioux Lookout,Local AQHI observations,Not configured,https://api.weather.gc.ca/collections/aqhi-stations/items
+Sioux Lookout,Local AQHI forecasts,Not configured,https://api.weather.gc.ca/collections/aqhi-stations/items
+St. Catharines,Weather archive,2026-10-23T02:00:02.242386+00:00,https://archive-api.open-meteo.com/v1/archive
+St. Catharines,Weather forecast,2026-10-23T02:00:01.433110+00:00,https://api.open-meteo.com/v1/forecast
+St. Catharines,CAMS ozone,2026-10-23T02:00:03.344844+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+St. Catharines,Local AQHI observations,2026-10-23T02:00:03.512342+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+St. Catharines,Local AQHI forecasts,2026-10-23T02:00:03.694463+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+Sudbury,Weather archive,2026-10-23T02:00:03.232088+00:00,https://archive-api.open-meteo.com/v1/archive
+Sudbury,Weather forecast,2026-10-23T02:00:02.479380+00:00,https://api.open-meteo.com/v1/forecast
+Sudbury,CAMS ozone,2026-10-23T02:00:03.778705+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Sudbury,Local AQHI observations,2026-10-23T02:00:03.941272+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+Sudbury,Local AQHI forecasts,2026-10-23T02:00:04.100504+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+Thunder Bay,Weather archive,2026-10-23T02:00:03.492500+00:00,https://archive-api.open-meteo.com/v1/archive
+Thunder Bay,Weather forecast,2026-10-23T02:00:02.738009+00:00,https://api.open-meteo.com/v1/forecast
+Thunder Bay,CAMS ozone,2026-10-23T02:00:04.428301+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Thunder Bay,Local AQHI observations,2026-10-23T02:00:04.613068+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+Thunder Bay,Local AQHI forecasts,2026-10-23T02:00:04.872862+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+Timmins,Weather archive,2026-10-23T02:00:06.525933+00:00,https://archive-api.open-meteo.com/v1/archive
+Timmins,Weather forecast,2026-10-23T02:01:25.709729+00:00,https://api.open-meteo.com/v1/forecast
+Timmins,CAMS ozone,2026-10-23T02:00:07.132194+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Timmins,Local AQHI observations,Not configured,https://api.weather.gc.ca/collections/aqhi-stations/items
+Timmins,Local AQHI forecasts,Not configured,https://api.weather.gc.ca/collections/aqhi-stations/items
+Tiverton,Weather archive,2026-10-23T02:00:06.746415+00:00,https://archive-api.open-meteo.com/v1/archive
+Tiverton,Weather forecast,2026-10-23T02:01:25.670876+00:00,https://api.open-meteo.com/v1/forecast
+Tiverton,CAMS ozone,2026-10-23T02:00:07.692147+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Tiverton,Local AQHI observations,2026-10-23T02:00:08.457232+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+Tiverton,Local AQHI forecasts,2026-10-23T02:00:08.663540+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+Toronto Downtown,Weather archive,2026-10-23T02:00:07.392719+00:00,https://archive-api.open-meteo.com/v1/archive
+Toronto Downtown,Weather forecast,2026-10-23T02:00:06.642594+00:00,https://api.open-meteo.com/v1/forecast
+Toronto Downtown,CAMS ozone,2026-10-23T02:00:07.977026+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Toronto Downtown,Local AQHI observations,2026-10-23T02:00:08.199302+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+Toronto Downtown,Local AQHI forecasts,2026-10-23T02:00:09.155621+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+Toronto East,Weather archive,2026-10-23T02:00:09.928509+00:00,https://archive-api.open-meteo.com/v1/archive
+Toronto East,Weather forecast,2026-10-23T02:00:09.141082+00:00,https://api.open-meteo.com/v1/forecast
+Toronto East,CAMS ozone,2026-10-23T02:00:10.527242+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Toronto East,Local AQHI observations,2026-10-23T02:00:10.881822+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+Toronto East,Local AQHI forecasts,2026-10-23T02:00:11.257450+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+Toronto North,Weather archive,2026-10-23T02:00:10.899441+00:00,https://archive-api.open-meteo.com/v1/archive
+Toronto North,Weather forecast,2026-10-23T02:00:10.166602+00:00,https://api.open-meteo.com/v1/forecast
+Toronto North,CAMS ozone,2026-10-23T02:00:11.443575+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Toronto North,Local AQHI observations,2026-10-23T02:00:11.712935+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+Toronto North,Local AQHI forecasts,2026-10-23T02:00:12.186624+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+Toronto West,Weather archive,2026-10-23T02:00:11.825177+00:00,https://archive-api.open-meteo.com/v1/archive
+Toronto West,Weather forecast,2026-10-23T02:00:10.941006+00:00,https://api.open-meteo.com/v1/forecast
+Toronto West,CAMS ozone,2026-10-23T02:00:12.348187+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Toronto West,Local AQHI observations,2026-10-23T02:00:13.196383+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+Toronto West,Local AQHI forecasts,2026-10-23T02:00:13.555186+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+Windsor,Weather archive,2026-10-23T02:00:14.997457+00:00,https://archive-api.open-meteo.com/v1/archive
+Windsor,Weather forecast,2026-10-23T02:00:14.159020+00:00,https://api.open-meteo.com/v1/forecast
+Windsor,CAMS ozone,2026-10-23T02:00:15.549091+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Windsor,Local AQHI observations,2026-10-23T02:00:16.048285+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+Windsor,Local AQHI forecasts,2026-10-23T02:00:16.497352+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+Windsor Downtown,Weather archive,2026-10-23T02:00:15.383774+00:00,https://archive-api.open-meteo.com/v1/archive
+Windsor Downtown,Weather forecast,2026-10-23T02:00:14.671688+00:00,https://api.open-meteo.com/v1/forecast
+Windsor Downtown,CAMS ozone,2026-10-23T02:00:15.939733+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Windsor Downtown,Local AQHI observations,2026-10-23T02:00:16.278995+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+Windsor Downtown,Local AQHI forecasts,2026-10-23T02:00:16.508808+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items
+Windsor West,Weather archive,2026-10-23T02:00:15.823530+00:00,https://archive-api.open-meteo.com/v1/archive
+Windsor West,Weather forecast,2026-10-23T02:00:15.078522+00:00,https://api.open-meteo.com/v1/forecast
+Windsor West,CAMS ozone,2026-10-23T02:00:16.479635+00:00,https://air-quality-api.open-meteo.com/v1/air-quality
+Windsor West,Local AQHI observations,2026-10-23T02:00:16.660023+00:00,https://api.weather.gc.ca/collections/aqhi-observations-realtime/items
+Windsor West,Local AQHI forecasts,2026-10-23T02:00:16.844298+00:00,https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items

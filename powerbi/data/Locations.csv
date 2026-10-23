@@ -1,0 +1,48 @@
+Location,Region,Latitude,Longitude,TimeZone,AQHIArea
+Toronto,Greater Toronto & Hamilton,43.6532,-79.3832,America/Toronto,FEUZB
+Barrie,Central & Southern Ontario,44.37124,-79.6769699,America/Toronto,FAFFD
+Belleville,Eastern Ontario,44.2566666,-77.3697222,America/Toronto,FEVJS
+Brampton,Greater Toronto & Hamilton,43.7315,-79.7624,America/Toronto,FALIF
+Brantford,Central & Southern Ontario,43.1569444,-80.25749,America/Toronto,FALJI
+Burlington,Greater Toronto & Hamilton,43.37,-79.8141666666667,America/Toronto,FAMXK
+Chatham,Southwestern Ontario,42.43396,-82.12876,America/Toronto,FEUTC
+Cornwall,Eastern Ontario,45.0263889,-74.7263889,America/Toronto,FCCOT
+Dorset,Central & Southern Ontario,45.2447222,-78.8927778,America/Toronto,FAZKI
+Dryden,Northwestern & Far Northern Ontario,49.78334,-92.75032,America/Winnipeg,Not configured
+Fort Severn,Northwestern & Far Northern Ontario,55.98352,-87.63317,America/Toronto,Not configured
+Grand Bend,Southwestern Ontario,43.3025,-81.7563889,America/Toronto,FAYJG
+Guelph,Central & Southern Ontario,43.53571,-80.22899,America/Toronto,FBKKK
+Hamilton,Greater Toronto & Hamilton,43.2557,-79.8711,America/Toronto,FEVNS
+Hamilton Downtown,Greater Toronto & Hamilton,43.24504,-79.8418,America/Toronto,FBLJL
+Hamilton Mountain,Greater Toronto & Hamilton,43.23039,-79.82235,America/Toronto,FBLKS
+Hamilton West,Greater Toronto & Hamilton,43.2644444,-79.9027778,America/Toronto,FDCHU
+Kenora,Northwestern & Far Northern Ontario,49.76741,-94.48985,America/Winnipeg,Not configured
+Kingston,Eastern Ontario,44.3066666,-76.4163888,America/Toronto,FEVJR
+Kitchener,Central & Southern Ontario,43.4186111,-80.4727778,America/Toronto,FEBWC
+London,Southwestern Ontario,42.9674999,-81.2325,America/Toronto,FCAEN
+Milton,Greater Toronto & Hamilton,43.5055556,-79.9177778,America/Toronto,FDGEM
+Mississauga,Greater Toronto & Hamilton,43.589,-79.6441,America/Toronto,FEAKO
+Moosonee,Northeastern Ontario,51.27931,-80.6345,America/Toronto,Not configured
+Newmarket,Greater Toronto & Hamilton,44.0580555555556,-79.4583333333333,America/Toronto,FDGED
+North Bay,Northeastern Ontario,46.314444,-79.459167,America/Toronto,FCFUU
+Oakville,Greater Toronto & Hamilton,43.4675,-79.6877,America/Toronto,FCGKZ
+Oshawa,Greater Toronto & Hamilton,43.9005555555556,-78.8572222222222,America/Toronto,FDMOP
+Ottawa,Eastern Ontario,45.4344444444445,-75.6769444444444,America/Toronto,FEVNT
+Parry Sound,Central & Southern Ontario,45.3538889,-80.0361111,America/Toronto,FDSUS
+Peterborough,Eastern Ontario,44.3011111,-78.3333333,America/Toronto,FDGEJ
+Port Stanley,Southwestern Ontario,42.6663888,-81.2108334,America/Toronto,FCIBD
+Sarnia,Southwestern Ontario,42.9813889,-82.3177777,America/Toronto,FEARV
+Sault Ste. Marie,Northeastern Ontario,46.5588888,-84.3469444,America/Toronto,FDZCP
+Sioux Lookout,Northwestern & Far Northern Ontario,50.09906,-91.92158,America/Winnipeg,Not configured
+St. Catharines,Central & Southern Ontario,43.16544,-79.2533,America/Toronto,FDJFN
+Sudbury,Northeastern Ontario,46.5011111,-80.9775,America/Toronto,FCTOV
+Thunder Bay,Northwestern & Far Northern Ontario,48.4013889,-89.2677778,America/Toronto,FCWFX
+Timmins,Northeastern Ontario,48.46686,-81.33312,America/Toronto,Not configured
+Tiverton,Southwestern Ontario,44.2669444,-81.5444444,America/Toronto,FCWOV
+Toronto Downtown,Greater Toronto & Hamilton,43.6758333,-79.3969444,America/Toronto,FCWYG
+Toronto East,Greater Toronto & Hamilton,43.7558333,-79.2308334,America/Toronto,FDQBU
+Toronto North,Greater Toronto & Hamilton,43.76205,-79.41026,America/Toronto,FDQBX
+Toronto West,Greater Toronto & Hamilton,43.71823,-79.56589,America/Toronto,FCKTB
+Windsor,Southwestern Ontario,42.3022222222222,-82.9936111111111,America/Toronto,FDEGT
+Windsor Downtown,Southwestern Ontario,42.3081,-82.99182,America/Toronto,FDATE
+Windsor West,Southwestern Ontario,42.2830556,-83.0594444,America/Toronto,FCNJT

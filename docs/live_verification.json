@@ -1,0 +1,660 @@
+[
+  {
+    "city": "Toronto",
+    "days": 90,
+    "adjusted_r2": 0.4422916145770006,
+    "heldout_rmse": 7.508002785299104,
+    "sources": {
+      "Weather archive": "2026-10-23T02:02:37.281929+00:00",
+      "Weather forecast": "2026-10-23T02:02:37.931031+00:00",
+      "CAMS ozone": "2026-10-23T02:02:38.536195+00:00",
+      "Local AQHI observations": "2026-10-23T02:02:38.728469+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:02:38.930570+00:00"
+    },
+    "official_aqhi_area": "FEUZB"
+  },
+  {
+    "city": "Barrie",
+    "days": 90,
+    "adjusted_r2": 0.48919891311225183,
+    "heldout_rmse": 9.739887785104195,
+    "sources": {
+      "Weather archive": "2026-10-23T02:02:37.323083+00:00",
+      "Weather forecast": "2026-10-23T02:02:37.975007+00:00",
+      "CAMS ozone": "2026-10-23T02:02:38.544102+00:00",
+      "Local AQHI observations": "2026-10-23T02:02:38.723940+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:02:38.950195+00:00"
+    },
+    "official_aqhi_area": "FAFFD"
+  },
+  {
+    "city": "Belleville",
+    "days": 90,
+    "adjusted_r2": 0.3572356146724843,
+    "heldout_rmse": 9.2046295518655,
+    "sources": {
+      "Weather archive": "2026-10-23T02:02:37.375109+00:00",
+      "Weather forecast": "2026-10-23T02:02:37.940988+00:00",
+      "CAMS ozone": "2026-10-23T02:02:38.573998+00:00",
+      "Local AQHI observations": "2026-10-23T02:02:38.718813+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:02:38.901681+00:00"
+    },
+    "official_aqhi_area": "FEVJS"
+  },
+  {
+    "city": "Brampton",
+    "days": 90,
+    "adjusted_r2": 0.4954847625385228,
+    "heldout_rmse": 7.17726122902389,
+    "sources": {
+      "Weather archive": "2026-10-23T02:02:40.849242+00:00",
+      "Weather forecast": "2026-10-23T02:02:41.561385+00:00",
+      "CAMS ozone": "2026-10-23T02:02:42.072465+00:00",
+      "Local AQHI observations": "2026-10-23T02:02:42.256404+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:02:42.445944+00:00"
+    },
+    "official_aqhi_area": "FALIF"
+  },
+  {
+    "city": "Brantford",
+    "days": 90,
+    "adjusted_r2": 0.5575684245610564,
+    "heldout_rmse": 7.328060292455133,
+    "sources": {
+      "Weather archive": "2026-10-23T02:02:40.138232+00:00",
+      "Weather forecast": "2026-10-23T02:02:40.769967+00:00",
+      "CAMS ozone": "2026-10-23T02:02:41.281737+00:00",
+      "Local AQHI observations": "2026-10-23T02:02:41.444372+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:02:41.629297+00:00"
+    },
+    "official_aqhi_area": "FALJI"
+  },
+  {
+    "city": "Burlington",
+    "days": 90,
+    "adjusted_r2": 0.4566409164477394,
+    "heldout_rmse": 8.522010432112967,
+    "sources": {
+      "Weather archive": "2026-10-23T02:02:40.126126+00:00",
+      "Weather forecast": "2026-10-23T02:02:40.762239+00:00",
+      "CAMS ozone": "2026-10-23T02:02:41.304812+00:00",
+      "Local AQHI observations": "2026-10-23T02:02:41.451894+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:02:41.692835+00:00"
+    },
+    "official_aqhi_area": "FAMXK"
+  },
+  {
+    "city": "Chatham",
+    "days": 90,
+    "adjusted_r2": 0.6288062353970323,
+    "heldout_rmse": 10.2094822055115,
+    "sources": {
+      "Weather archive": "2026-10-23T02:02:42.571141+00:00",
+      "Weather forecast": "2026-10-23T02:02:43.225669+00:00",
+      "CAMS ozone": "2026-10-23T02:02:43.794203+00:00",
+      "Local AQHI observations": "2026-10-23T02:02:44.025762+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:02:44.228259+00:00"
+    },
+    "official_aqhi_area": "FEUTC"
+  },
+  {
+    "city": "Cornwall",
+    "days": 90,
+    "adjusted_r2": 0.5580565972016973,
+    "heldout_rmse": 6.886665611058307,
+    "sources": {
+      "Weather archive": "2026-10-23T02:02:42.579000+00:00",
+      "Weather forecast": "2026-10-23T02:02:43.220204+00:00",
+      "CAMS ozone": "2026-10-23T02:02:44.348326+00:00",
+      "Local AQHI observations": "2026-10-23T02:02:44.562879+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:02:44.750955+00:00"
+    },
+    "official_aqhi_area": "FCCOT"
+  },
+  {
+    "city": "Dorset",
+    "days": 90,
+    "adjusted_r2": 0.28493212091810227,
+    "heldout_rmse": 9.65366049676443,
+    "sources": {
+      "Weather archive": "2026-10-23T02:02:43.614281+00:00",
+      "Weather forecast": "2026-10-23T02:02:44.243503+00:00",
+      "CAMS ozone": "2026-10-23T02:02:44.824737+00:00",
+      "Local AQHI observations": "2026-10-23T02:02:45.019950+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:02:45.238895+00:00"
+    },
+    "official_aqhi_area": "FAZKI"
+  },
+  {
+    "city": "Dryden",
+    "days": 90,
+    "adjusted_r2": 0.35226547559689714,
+    "heldout_rmse": 4.49085462160885,
+    "sources": {
+      "Weather archive": "2026-10-23T02:02:45.098829+00:00",
+      "Weather forecast": "2026-10-23T02:02:45.788817+00:00",
+      "CAMS ozone": "2026-10-23T02:02:46.374538+00:00",
+      "Local AQHI observations": null,
+      "Local AQHI forecasts": null
+    },
+    "official_aqhi_area": null
+  },
+  {
+    "city": "Fort Severn",
+    "days": 90,
+    "adjusted_r2": 0.06156719000031141,
+    "heldout_rmse": 11.278645791340336,
+    "sources": {
+      "Weather archive": "2026-10-23T02:02:45.682323+00:00",
+      "Weather forecast": "2026-10-23T02:02:46.322116+00:00",
+      "CAMS ozone": "2026-10-23T02:02:46.869612+00:00",
+      "Local AQHI observations": null,
+      "Local AQHI forecasts": null
+    },
+    "official_aqhi_area": null
+  },
+  {
+    "city": "Grand Bend",
+    "days": 90,
+    "adjusted_r2": 0.5878575726949307,
+    "heldout_rmse": 9.57050920731334,
+    "sources": {
+      "Weather archive": "2026-10-23T02:02:46.080746+00:00",
+      "Weather forecast": "2026-10-23T02:02:46.698138+00:00",
+      "CAMS ozone": "2026-10-23T02:02:47.249256+00:00",
+      "Local AQHI observations": "2026-10-23T02:02:47.449206+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:02:47.644058+00:00"
+    },
+    "official_aqhi_area": "FAYJG"
+  },
+  {
+    "city": "Guelph",
+    "days": 90,
+    "adjusted_r2": 0.5503160869951029,
+    "heldout_rmse": 7.08953041167646,
+    "sources": {
+      "Weather archive": "2026-10-23T02:02:47.178055+00:00",
+      "Weather forecast": "2026-10-23T02:02:47.774360+00:00",
+      "CAMS ozone": "2026-10-23T02:02:48.298036+00:00",
+      "Local AQHI observations": "2026-10-23T02:02:48.526820+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:02:48.705640+00:00"
+    },
+    "official_aqhi_area": "FBKKK"
+  },
+  {
+    "city": "Hamilton",
+    "days": 90,
+    "adjusted_r2": 0.5058801981445971,
+    "heldout_rmse": 7.343863915231156,
+    "sources": {
+      "Weather archive": "2026-10-23T02:02:47.730667+00:00",
+      "Weather forecast": "2026-10-23T02:02:48.326053+00:00",
+      "CAMS ozone": "2026-10-23T02:02:48.865027+00:00",
+      "Local AQHI observations": "2026-10-23T02:02:49.059299+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:02:49.260894+00:00"
+    },
+    "official_aqhi_area": "FEVNS"
+  },
+  {
+    "city": "Hamilton Downtown",
+    "days": 90,
+    "adjusted_r2": 0.5163094123926977,
+    "heldout_rmse": 7.198551762730151,
+    "sources": {
+      "Weather archive": "2026-10-23T02:02:48.474457+00:00",
+      "Weather forecast": "2026-10-23T02:02:49.055140+00:00",
+      "CAMS ozone": "2026-10-23T02:02:49.613745+00:00",
+      "Local AQHI observations": "2026-10-23T02:02:49.777773+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:02:49.967815+00:00"
+    },
+    "official_aqhi_area": "FBLJL"
+  },
+  {
+    "city": "Hamilton Mountain",
+    "days": 90,
+    "adjusted_r2": 0.5185716633628568,
+    "heldout_rmse": 7.144832692019865,
+    "sources": {
+      "Weather archive": "2026-10-23T02:02:49.536888+00:00",
+      "Weather forecast": "2026-10-23T02:02:50.141330+00:00",
+      "CAMS ozone": "2026-10-23T02:02:50.660635+00:00",
+      "Local AQHI observations": "2026-10-23T02:02:50.804253+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:02:50.993034+00:00"
+    },
+    "official_aqhi_area": "FBLKS"
+  },
+  {
+    "city": "Hamilton West",
+    "days": 90,
+    "adjusted_r2": 0.5055542288746568,
+    "heldout_rmse": 7.366918448359403,
+    "sources": {
+      "Weather archive": "2026-10-23T02:02:50.132538+00:00",
+      "Weather forecast": "2026-10-23T02:02:50.733717+00:00",
+      "CAMS ozone": "2026-10-23T02:02:51.349314+00:00",
+      "Local AQHI observations": "2026-10-23T02:02:51.513558+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:02:51.678598+00:00"
+    },
+    "official_aqhi_area": "FDCHU"
+  },
+  {
+    "city": "Kenora",
+    "days": 90,
+    "adjusted_r2": 0.44907586179908177,
+    "heldout_rmse": 4.34129440239371,
+    "sources": {
+      "Weather archive": "2026-10-23T02:02:50.779760+00:00",
+      "Weather forecast": "2026-10-23T02:02:51.391083+00:00",
+      "CAMS ozone": "2026-10-23T02:02:51.936212+00:00",
+      "Local AQHI observations": null,
+      "Local AQHI forecasts": null
+    },
+    "official_aqhi_area": null
+  },
+  {
+    "city": "Kingston",
+    "days": 90,
+    "adjusted_r2": 0.4169686908889322,
+    "heldout_rmse": 7.978631853743962,
+    "sources": {
+      "Weather archive": "2026-10-23T02:02:51.846544+00:00",
+      "Weather forecast": "2026-10-23T02:02:52.558018+00:00",
+      "CAMS ozone": "2026-10-23T02:02:53.431959+00:00",
+      "Local AQHI observations": "2026-10-23T02:02:53.714221+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:02:54.100098+00:00"
+    },
+    "official_aqhi_area": "FEVJR"
+  },
+  {
+    "city": "Kitchener",
+    "days": 90,
+    "adjusted_r2": 0.5523022840445391,
+    "heldout_rmse": 6.989309209783689,
+    "sources": {
+      "Weather archive": "2026-10-23T02:02:52.838807+00:00",
+      "Weather forecast": "2026-10-23T02:02:53.632765+00:00",
+      "CAMS ozone": "2026-10-23T02:02:54.565851+00:00",
+      "Local AQHI observations": "2026-10-23T02:02:54.882746+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:02:55.362425+00:00"
+    },
+    "official_aqhi_area": "FEBWC"
+  },
+  {
+    "city": "London",
+    "days": 90,
+    "adjusted_r2": 0.5284991863437611,
+    "heldout_rmse": 9.368754578226628,
+    "sources": {
+      "Weather archive": "2026-10-23T02:02:53.063095+00:00",
+      "Weather forecast": "2026-10-23T02:02:53.854772+00:00",
+      "CAMS ozone": "2026-10-23T02:02:54.825107+00:00",
+      "Local AQHI observations": "2026-10-23T02:02:55.108726+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:02:55.600864+00:00"
+    },
+    "official_aqhi_area": "FCAEN"
+  },
+  {
+    "city": "Milton",
+    "days": 90,
+    "adjusted_r2": 0.5755037486504735,
+    "heldout_rmse": 8.058535450716285,
+    "sources": {
+      "Weather archive": "2026-10-23T02:02:55.494215+00:00",
+      "Weather forecast": "2026-10-23T02:02:56.405284+00:00",
+      "CAMS ozone": "2026-10-23T02:02:57.349388+00:00",
+      "Local AQHI observations": "2026-10-23T02:02:57.674237+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:02:58.132545+00:00"
+    },
+    "official_aqhi_area": "FDGEM"
+  },
+  {
+    "city": "Mississauga",
+    "days": 90,
+    "adjusted_r2": 0.4989128959009067,
+    "heldout_rmse": 7.13866965631923,
+    "sources": {
+      "Weather archive": "2026-10-23T02:02:56.648553+00:00",
+      "Weather forecast": "2026-10-23T02:02:57.589969+00:00",
+      "CAMS ozone": "2026-10-23T02:02:58.354410+00:00",
+      "Local AQHI observations": "2026-10-23T02:02:58.614498+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:02:58.819082+00:00"
+    },
+    "official_aqhi_area": "FEAKO"
+  },
+  {
+    "city": "Moosonee",
+    "days": 90,
+    "adjusted_r2": 0.2224721338901252,
+    "heldout_rmse": 7.510844771769199,
+    "sources": {
+      "Weather archive": "2026-10-23T02:02:56.868296+00:00",
+      "Weather forecast": "2026-10-23T02:02:57.824514+00:00",
+      "CAMS ozone": "2026-10-23T02:02:58.462614+00:00",
+      "Local AQHI observations": null,
+      "Local AQHI forecasts": null
+    },
+    "official_aqhi_area": null
+  },
+  {
+    "city": "Newmarket",
+    "days": 90,
+    "adjusted_r2": 0.5164778400723358,
+    "heldout_rmse": 9.782838899199799,
+    "sources": {
+      "Weather archive": "2026-10-23T02:02:58.992670+00:00",
+      "Weather forecast": "2026-10-23T02:02:59.568426+00:00",
+      "CAMS ozone": "2026-10-23T02:03:00.199437+00:00",
+      "Local AQHI observations": "2026-10-23T02:03:00.547909+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:03:00.800619+00:00"
+    },
+    "official_aqhi_area": "FDGED"
+  },
+  {
+    "city": "North Bay",
+    "days": 90,
+    "adjusted_r2": 0.23887230323143305,
+    "heldout_rmse": 6.211113537004822,
+    "sources": {
+      "Weather archive": "2026-10-23T02:02:59.297851+00:00",
+      "Weather forecast": "2026-10-23T02:02:59.848176+00:00",
+      "CAMS ozone": "2026-10-23T02:03:00.654362+00:00",
+      "Local AQHI observations": "2026-10-23T02:03:00.888347+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:03:01.114803+00:00"
+    },
+    "official_aqhi_area": "FCFUU"
+  },
+  {
+    "city": "Oakville",
+    "days": 90,
+    "adjusted_r2": 0.4894011304118372,
+    "heldout_rmse": 7.180463927392135,
+    "sources": {
+      "Weather archive": "2026-10-23T02:02:59.681100+00:00",
+      "Weather forecast": "2026-10-23T02:03:00.497466+00:00",
+      "CAMS ozone": "2026-10-23T02:03:01.136667+00:00",
+      "Local AQHI observations": "2026-10-23T02:03:01.341387+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:03:01.528482+00:00"
+    },
+    "official_aqhi_area": "FCGKZ"
+  },
+  {
+    "city": "Oshawa",
+    "days": 90,
+    "adjusted_r2": 0.41608616832270895,
+    "heldout_rmse": 10.989170380495942,
+    "sources": {
+      "Weather archive": "2026-10-23T02:03:01.728548+00:00",
+      "Weather forecast": "2026-10-23T02:03:02.312776+00:00",
+      "CAMS ozone": "2026-10-23T02:03:02.881007+00:00",
+      "Local AQHI observations": "2026-10-23T02:03:03.044582+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:03:03.235238+00:00"
+    },
+    "official_aqhi_area": "FDMOP"
+  },
+  {
+    "city": "Ottawa",
+    "days": 90,
+    "adjusted_r2": 0.5181409213472388,
+    "heldout_rmse": 10.29035817557651,
+    "sources": {
+      "Weather archive": "2026-10-23T02:03:02.028397+00:00",
+      "Weather forecast": "2026-10-23T02:03:02.666923+00:00",
+      "CAMS ozone": "2026-10-23T02:03:03.199799+00:00",
+      "Local AQHI observations": "2026-10-23T02:03:03.414114+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:03:03.602377+00:00"
+    },
+    "official_aqhi_area": "FEVNT"
+  },
+  {
+    "city": "Parry Sound",
+    "days": 90,
+    "adjusted_r2": 0.2703421738749945,
+    "heldout_rmse": 7.60943373643969,
+    "sources": {
+      "Weather archive": "2026-10-23T02:03:02.337825+00:00",
+      "Weather forecast": "2026-10-23T02:03:02.924220+00:00",
+      "CAMS ozone": "2026-10-23T02:03:04.120703+00:00",
+      "Local AQHI observations": "2026-10-23T02:03:04.293323+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:03:04.470137+00:00"
+    },
+    "official_aqhi_area": "FDSUS"
+  },
+  {
+    "city": "Peterborough",
+    "days": 90,
+    "adjusted_r2": 0.4709376607076917,
+    "heldout_rmse": 12.28775299104939,
+    "sources": {
+      "Weather archive": "2026-10-23T02:03:04.108755+00:00",
+      "Weather forecast": "2026-10-23T02:03:04.715484+00:00",
+      "CAMS ozone": "2026-10-23T02:03:05.284325+00:00",
+      "Local AQHI observations": "2026-10-23T02:03:05.484306+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:03:05.663728+00:00"
+    },
+    "official_aqhi_area": "FDGEJ"
+  },
+  {
+    "city": "Port Stanley",
+    "days": 90,
+    "adjusted_r2": 0.46826504293994764,
+    "heldout_rmse": 10.091838926268574,
+    "sources": {
+      "Weather archive": "2026-10-23T02:03:04.377279+00:00",
+      "Weather forecast": "2026-10-23T02:03:04.959146+00:00",
+      "CAMS ozone": "2026-10-23T02:03:05.575674+00:00",
+      "Local AQHI observations": "2026-10-23T02:03:05.788910+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:03:05.964465+00:00"
+    },
+    "official_aqhi_area": "FCIBD"
+  },
+  {
+    "city": "Sarnia",
+    "days": 90,
+    "adjusted_r2": 0.7083340854817757,
+    "heldout_rmse": 8.841040357240287,
+    "sources": {
+      "Weather archive": "2026-10-23T02:03:05.327099+00:00",
+      "Weather forecast": "2026-10-23T02:03:06.005430+00:00",
+      "CAMS ozone": "2026-10-23T02:03:06.576655+00:00",
+      "Local AQHI observations": "2026-10-23T02:03:06.749719+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:03:06.964670+00:00"
+    },
+    "official_aqhi_area": "FEARV"
+  },
+  {
+    "city": "Sault Ste. Marie",
+    "days": 90,
+    "adjusted_r2": 0.5155574781271379,
+    "heldout_rmse": 5.0692074895170425,
+    "sources": {
+      "Weather archive": "2026-10-23T02:03:06.461515+00:00",
+      "Weather forecast": "2026-10-23T02:03:07.172150+00:00",
+      "CAMS ozone": "2026-10-23T02:03:07.681308+00:00",
+      "Local AQHI observations": "2026-10-23T02:03:07.834852+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:03:08.021840+00:00"
+    },
+    "official_aqhi_area": "FDZCP"
+  },
+  {
+    "city": "Sioux Lookout",
+    "days": 90,
+    "adjusted_r2": 0.3343888114885566,
+    "heldout_rmse": 4.744242260095137,
+    "sources": {
+      "Weather archive": "2026-10-23T02:03:06.802546+00:00",
+      "Weather forecast": "2026-10-23T02:03:07.493647+00:00",
+      "CAMS ozone": "2026-10-23T02:03:08.050920+00:00",
+      "Local AQHI observations": null,
+      "Local AQHI forecasts": null
+    },
+    "official_aqhi_area": null
+  },
+  {
+    "city": "St. Catharines",
+    "days": 90,
+    "adjusted_r2": 0.5369128943171642,
+    "heldout_rmse": 8.878971336051887,
+    "sources": {
+      "Weather archive": "2026-10-23T02:03:07.752660+00:00",
+      "Weather forecast": "2026-10-23T02:03:08.332411+00:00",
+      "CAMS ozone": "2026-10-23T02:03:08.930702+00:00",
+      "Local AQHI observations": "2026-10-23T02:03:09.124238+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:03:09.321549+00:00"
+    },
+    "official_aqhi_area": "FDJFN"
+  },
+  {
+    "city": "Sudbury",
+    "days": 90,
+    "adjusted_r2": 0.3603593332059376,
+    "heldout_rmse": 4.828460566678552,
+    "sources": {
+      "Weather archive": "2026-10-23T02:03:09.134454+00:00",
+      "Weather forecast": "2026-10-23T02:03:09.753437+00:00",
+      "CAMS ozone": "2026-10-23T02:03:10.307751+00:00",
+      "Local AQHI observations": "2026-10-23T02:03:10.446449+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:03:10.655492+00:00"
+    },
+    "official_aqhi_area": "FCTOV"
+  },
+  {
+    "city": "Thunder Bay",
+    "days": 90,
+    "adjusted_r2": 0.13353246674475905,
+    "heldout_rmse": 4.255523621641093,
+    "sources": {
+      "Weather archive": "2026-10-23T02:03:09.025360+00:00",
+      "Weather forecast": "2026-10-23T02:03:09.673020+00:00",
+      "CAMS ozone": "2026-10-23T02:03:10.198351+00:00",
+      "Local AQHI observations": "2026-10-23T02:03:10.376467+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:03:10.524172+00:00"
+    },
+    "official_aqhi_area": "FCWFX"
+  },
+  {
+    "city": "Timmins",
+    "days": 90,
+    "adjusted_r2": 0.3397494095739728,
+    "heldout_rmse": 4.924462753504288,
+    "sources": {
+      "Weather archive": "2026-10-23T02:03:10.188437+00:00",
+      "Weather forecast": "2026-10-23T02:03:10.824831+00:00",
+      "CAMS ozone": "2026-10-23T02:03:11.360383+00:00",
+      "Local AQHI observations": null,
+      "Local AQHI forecasts": null
+    },
+    "official_aqhi_area": null
+  },
+  {
+    "city": "Tiverton",
+    "days": 90,
+    "adjusted_r2": 0.49854548560722556,
+    "heldout_rmse": 8.065181567035951,
+    "sources": {
+      "Weather archive": "2026-10-23T02:03:11.507554+00:00",
+      "Weather forecast": "2026-10-23T02:03:12.176605+00:00",
+      "CAMS ozone": "2026-10-23T02:03:12.701155+00:00",
+      "Local AQHI observations": "2026-10-23T02:03:12.854995+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:03:13.055326+00:00"
+    },
+    "official_aqhi_area": "FCWOV"
+  },
+  {
+    "city": "Toronto Downtown",
+    "days": 90,
+    "adjusted_r2": 0.44101793162565095,
+    "heldout_rmse": 7.531189587251198,
+    "sources": {
+      "Weather archive": "2026-10-23T02:03:11.494825+00:00",
+      "Weather forecast": "2026-10-23T02:03:12.090415+00:00",
+      "CAMS ozone": "2026-10-23T02:03:12.651618+00:00",
+      "Local AQHI observations": "2026-10-23T02:03:12.818674+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:03:12.997889+00:00"
+    },
+    "official_aqhi_area": "FCWYG"
+  },
+  {
+    "city": "Toronto East",
+    "days": 90,
+    "adjusted_r2": 0.4359225428335822,
+    "heldout_rmse": 7.78211464180647,
+    "sources": {
+      "Weather archive": "2026-10-23T02:03:12.171589+00:00",
+      "Weather forecast": "2026-10-23T02:03:12.754158+00:00",
+      "CAMS ozone": "2026-10-23T02:03:13.300632+00:00",
+      "Local AQHI observations": "2026-10-23T02:03:13.468892+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:03:13.635929+00:00"
+    },
+    "official_aqhi_area": "FDQBU"
+  },
+  {
+    "city": "Toronto North",
+    "days": 90,
+    "adjusted_r2": 0.5080613302990602,
+    "heldout_rmse": 7.036803499941093,
+    "sources": {
+      "Weather archive": "2026-10-23T02:03:13.874343+00:00",
+      "Weather forecast": "2026-10-23T02:03:14.423034+00:00",
+      "CAMS ozone": "2026-10-23T02:03:14.942862+00:00",
+      "Local AQHI observations": "2026-10-23T02:03:15.101364+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:03:15.332610+00:00"
+    },
+    "official_aqhi_area": "FDQBX"
+  },
+  {
+    "city": "Toronto West",
+    "days": 90,
+    "adjusted_r2": 0.4832877150505026,
+    "heldout_rmse": 6.885275324021805,
+    "sources": {
+      "Weather archive": "2026-10-23T02:03:13.909271+00:00",
+      "Weather forecast": "2026-10-23T02:03:14.487451+00:00",
+      "CAMS ozone": "2026-10-23T02:03:15.108234+00:00",
+      "Local AQHI observations": "2026-10-23T02:03:15.279014+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:03:15.456735+00:00"
+    },
+    "official_aqhi_area": "FCKTB"
+  },
+  {
+    "city": "Windsor",
+    "days": 90,
+    "adjusted_r2": 0.6768091326312801,
+    "heldout_rmse": 8.625660904627486,
+    "sources": {
+      "Weather archive": "2026-10-23T02:03:14.398749+00:00",
+      "Weather forecast": "2026-10-23T02:03:15.043522+00:00",
+      "CAMS ozone": "2026-10-23T02:03:15.574564+00:00",
+      "Local AQHI observations": "2026-10-23T02:03:15.720647+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:03:15.905668+00:00"
+    },
+    "official_aqhi_area": "FDEGT"
+  },
+  {
+    "city": "Windsor Downtown",
+    "days": 90,
+    "adjusted_r2": 0.676379070144479,
+    "heldout_rmse": 8.650734535066603,
+    "sources": {
+      "Weather archive": "2026-10-23T02:03:16.223885+00:00",
+      "Weather forecast": "2026-10-23T02:03:16.888126+00:00",
+      "CAMS ozone": "2026-10-23T02:03:17.445212+00:00",
+      "Local AQHI observations": "2026-10-23T02:03:17.597330+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:03:17.766517+00:00"
+    },
+    "official_aqhi_area": "FDATE"
+  },
+  {
+    "city": "Windsor West",
+    "days": 90,
+    "adjusted_r2": 0.7000930369403057,
+    "heldout_rmse": 6.451051061311038,
+    "sources": {
+      "Weather archive": "2026-10-23T02:03:16.266070+00:00",
+      "Weather forecast": "2026-10-23T02:03:16.853960+00:00",
+      "CAMS ozone": "2026-10-23T02:03:17.428956+00:00",
+      "Local AQHI observations": "2026-10-23T02:03:17.583219+00:00",
+      "Local AQHI forecasts": "2026-10-23T02:03:17.813246+00:00"
+    },
+    "official_aqhi_area": "FCNJT"
+  }
+]
