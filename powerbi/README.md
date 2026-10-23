@@ -1,5 +1,8 @@
 # AIR QUALITY ANALYSIS RESEARCH ANALYSIS — Power BI Desktop
 
+Full source repository and reproducible refresh pipeline:
+https://github.com/mamkon/air-quality-analysis-research-analysis
+
 Open **AIR QUALITY ANALYSIS RESEARCH ANALYSIS.pbip** in current Power BI Desktop.
 Keep its adjacent `.Report` and `.SemanticModel` folders together. If data have
 not yet been imported, select **Home → Refresh**. You can then use **File → Save
