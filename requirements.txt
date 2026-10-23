@@ -1,0 +1,11 @@
+streamlit>=1.50,<2
+pyarrow>=19,<20
+plotly>=6,<7
+pandas>=2.2,<3
+numpy>=2,<3
+statsmodels>=0.14.4,<0.15
+scipy>=1.14,<2
+requests>=2.32,<3
+pytest>=8,<10
+ruff>=0.11,<1
+jsonschema>=4.23,<5
