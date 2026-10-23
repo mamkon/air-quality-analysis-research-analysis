@@ -1,0 +1,383 @@
+{
+  "retrieved_at": "2026-10-23T01:56:37.780382+00:00",
+  "station_source": "https://api.weather.gc.ca/collections/aqhi-stations/items",
+  "geocoding_source": "https://geocoding-api.open-meteo.com/v1/search",
+  "locations": {
+    "Toronto": {
+      "latitude": 43.6532,
+      "longitude": -79.3832,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FEUZB",
+      "aqhi_name": "Toronto",
+      "region": "Greater Toronto & Hamilton"
+    },
+    "Barrie": {
+      "latitude": 44.37124,
+      "longitude": -79.6769699,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FAFFD",
+      "aqhi_name": "Barrie",
+      "region": "Central & Southern Ontario"
+    },
+    "Belleville": {
+      "latitude": 44.2566666,
+      "longitude": -77.3697222,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FEVJS",
+      "aqhi_name": "Belleville",
+      "region": "Eastern Ontario"
+    },
+    "Brampton": {
+      "latitude": 43.7315,
+      "longitude": -79.7624,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FALIF",
+      "aqhi_name": "Brampton",
+      "region": "Greater Toronto & Hamilton"
+    },
+    "Brantford": {
+      "latitude": 43.1569444,
+      "longitude": -80.25749,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FALJI",
+      "aqhi_name": "Brantford",
+      "region": "Central & Southern Ontario"
+    },
+    "Burlington": {
+      "latitude": 43.37,
+      "longitude": -79.8141666666667,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FAMXK",
+      "aqhi_name": "Burlington",
+      "region": "Greater Toronto & Hamilton"
+    },
+    "Chatham": {
+      "latitude": 42.43396,
+      "longitude": -82.12876,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FEUTC",
+      "aqhi_name": "Chatham",
+      "region": "Southwestern Ontario"
+    },
+    "Cornwall": {
+      "latitude": 45.0263889,
+      "longitude": -74.7263889,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FCCOT",
+      "aqhi_name": "Cornwall",
+      "region": "Eastern Ontario"
+    },
+    "Dorset": {
+      "latitude": 45.2447222,
+      "longitude": -78.8927778,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FAZKI",
+      "aqhi_name": "Dorset",
+      "region": "Central & Southern Ontario"
+    },
+    "Dryden": {
+      "latitude": 49.78334,
+      "longitude": -92.75032,
+      "timezone": "America/Winnipeg",
+      "aqhi_id": null,
+      "aqhi_name": null,
+      "region": "Northwestern & Far Northern Ontario"
+    },
+    "Fort Severn": {
+      "latitude": 55.98352,
+      "longitude": -87.63317,
+      "timezone": "America/Toronto",
+      "aqhi_id": null,
+      "aqhi_name": null,
+      "region": "Northwestern & Far Northern Ontario"
+    },
+    "Grand Bend": {
+      "latitude": 43.3025,
+      "longitude": -81.7563889,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FAYJG",
+      "aqhi_name": "Grand Bend",
+      "region": "Southwestern Ontario"
+    },
+    "Guelph": {
+      "latitude": 43.53571,
+      "longitude": -80.22899,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FBKKK",
+      "aqhi_name": "Guelph",
+      "region": "Central & Southern Ontario"
+    },
+    "Hamilton": {
+      "latitude": 43.2557,
+      "longitude": -79.8711,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FEVNS",
+      "aqhi_name": "Hamilton",
+      "region": "Greater Toronto & Hamilton"
+    },
+    "Hamilton Downtown": {
+      "latitude": 43.24504,
+      "longitude": -79.8418,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FBLJL",
+      "aqhi_name": "Hamilton Downtown",
+      "region": "Greater Toronto & Hamilton"
+    },
+    "Hamilton Mountain": {
+      "latitude": 43.23039,
+      "longitude": -79.82235,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FBLKS",
+      "aqhi_name": "Hamilton Mountain",
+      "region": "Greater Toronto & Hamilton"
+    },
+    "Hamilton West": {
+      "latitude": 43.2644444,
+      "longitude": -79.9027778,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FDCHU",
+      "aqhi_name": "Hamilton West",
+      "region": "Greater Toronto & Hamilton"
+    },
+    "Kenora": {
+      "latitude": 49.76741,
+      "longitude": -94.48985,
+      "timezone": "America/Winnipeg",
+      "aqhi_id": null,
+      "aqhi_name": null,
+      "region": "Northwestern & Far Northern Ontario"
+    },
+    "Kingston": {
+      "latitude": 44.3066666,
+      "longitude": -76.4163888,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FEVJR",
+      "aqhi_name": "Kingston",
+      "region": "Eastern Ontario"
+    },
+    "Kitchener": {
+      "latitude": 43.4186111,
+      "longitude": -80.4727778,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FEBWC",
+      "aqhi_name": "Kitchener",
+      "region": "Central & Southern Ontario"
+    },
+    "London": {
+      "latitude": 42.9674999,
+      "longitude": -81.2325,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FCAEN",
+      "aqhi_name": "London",
+      "region": "Southwestern Ontario"
+    },
+    "Milton": {
+      "latitude": 43.5055556,
+      "longitude": -79.9177778,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FDGEM",
+      "aqhi_name": "Milton",
+      "region": "Greater Toronto & Hamilton"
+    },
+    "Mississauga": {
+      "latitude": 43.589,
+      "longitude": -79.6441,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FEAKO",
+      "aqhi_name": "Mississauga",
+      "region": "Greater Toronto & Hamilton"
+    },
+    "Moosonee": {
+      "latitude": 51.27931,
+      "longitude": -80.6345,
+      "timezone": "America/Toronto",
+      "aqhi_id": null,
+      "aqhi_name": null,
+      "region": "Northeastern Ontario"
+    },
+    "Newmarket": {
+      "latitude": 44.0580555555556,
+      "longitude": -79.4583333333333,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FDGED",
+      "aqhi_name": "Newmarket",
+      "region": "Greater Toronto & Hamilton"
+    },
+    "North Bay": {
+      "latitude": 46.314444,
+      "longitude": -79.459167,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FCFUU",
+      "aqhi_name": "North Bay",
+      "region": "Northeastern Ontario"
+    },
+    "Oakville": {
+      "latitude": 43.4675,
+      "longitude": -79.6877,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FCGKZ",
+      "aqhi_name": "Oakville",
+      "region": "Greater Toronto & Hamilton"
+    },
+    "Oshawa": {
+      "latitude": 43.9005555555556,
+      "longitude": -78.8572222222222,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FDMOP",
+      "aqhi_name": "Oshawa",
+      "region": "Greater Toronto & Hamilton"
+    },
+    "Ottawa": {
+      "latitude": 45.4344444444445,
+      "longitude": -75.6769444444444,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FEVNT",
+      "aqhi_name": "Ottawa",
+      "region": "Eastern Ontario"
+    },
+    "Parry Sound": {
+      "latitude": 45.3538889,
+      "longitude": -80.0361111,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FDSUS",
+      "aqhi_name": "Parry Sound",
+      "region": "Central & Southern Ontario"
+    },
+    "Peterborough": {
+      "latitude": 44.3011111,
+      "longitude": -78.3333333,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FDGEJ",
+      "aqhi_name": "Peterborough",
+      "region": "Eastern Ontario"
+    },
+    "Port Stanley": {
+      "latitude": 42.6663888,
+      "longitude": -81.2108334,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FCIBD",
+      "aqhi_name": "Port Stanley",
+      "region": "Southwestern Ontario"
+    },
+    "Sarnia": {
+      "latitude": 42.9813889,
+      "longitude": -82.3177777,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FEARV",
+      "aqhi_name": "Sarnia",
+      "region": "Southwestern Ontario"
+    },
+    "Sault Ste. Marie": {
+      "latitude": 46.5588888,
+      "longitude": -84.3469444,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FDZCP",
+      "aqhi_name": "Sault Ste. Marie",
+      "region": "Northeastern Ontario"
+    },
+    "Sioux Lookout": {
+      "latitude": 50.09906,
+      "longitude": -91.92158,
+      "timezone": "America/Winnipeg",
+      "aqhi_id": null,
+      "aqhi_name": null,
+      "region": "Northwestern & Far Northern Ontario"
+    },
+    "St. Catharines": {
+      "latitude": 43.16544,
+      "longitude": -79.2533,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FDJFN",
+      "aqhi_name": "St. Catharines",
+      "region": "Central & Southern Ontario"
+    },
+    "Sudbury": {
+      "latitude": 46.5011111,
+      "longitude": -80.9775,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FCTOV",
+      "aqhi_name": "Sudbury",
+      "region": "Northeastern Ontario"
+    },
+    "Thunder Bay": {
+      "latitude": 48.4013889,
+      "longitude": -89.2677778,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FCWFX",
+      "aqhi_name": "Thunder Bay",
+      "region": "Northwestern & Far Northern Ontario"
+    },
+    "Timmins": {
+      "latitude": 48.46686,
+      "longitude": -81.33312,
+      "timezone": "America/Toronto",
+      "aqhi_id": null,
+      "aqhi_name": null,
+      "region": "Northeastern Ontario"
+    },
+    "Tiverton": {
+      "latitude": 44.2669444,
+      "longitude": -81.5444444,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FCWOV",
+      "aqhi_name": "Tiverton",
+      "region": "Southwestern Ontario"
+    },
+    "Toronto Downtown": {
+      "latitude": 43.6758333,
+      "longitude": -79.3969444,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FCWYG",
+      "aqhi_name": "Toronto Downtown",
+      "region": "Greater Toronto & Hamilton"
+    },
+    "Toronto East": {
+      "latitude": 43.7558333,
+      "longitude": -79.2308334,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FDQBU",
+      "aqhi_name": "Toronto East",
+      "region": "Greater Toronto & Hamilton"
+    },
+    "Toronto North": {
+      "latitude": 43.76205,
+      "longitude": -79.41026,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FDQBX",
+      "aqhi_name": "Toronto North",
+      "region": "Greater Toronto & Hamilton"
+    },
+    "Toronto West": {
+      "latitude": 43.71823,
+      "longitude": -79.56589,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FCKTB",
+      "aqhi_name": "Toronto West",
+      "region": "Greater Toronto & Hamilton"
+    },
+    "Windsor": {
+      "latitude": 42.3022222222222,
+      "longitude": -82.9936111111111,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FDEGT",
+      "aqhi_name": "Windsor",
+      "region": "Southwestern Ontario"
+    },
+    "Windsor Downtown": {
+      "latitude": 42.3081,
+      "longitude": -82.99182,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FDATE",
+      "aqhi_name": "Windsor Downtown",
+      "region": "Southwestern Ontario"
+    },
+    "Windsor West": {
+      "latitude": 42.2830556,
+      "longitude": -83.0594444,
+      "timezone": "America/Toronto",
+      "aqhi_id": "FCNJT",
+      "aqhi_name": "Windsor West",
+      "region": "Southwestern Ontario"
+    }
+  }
+}

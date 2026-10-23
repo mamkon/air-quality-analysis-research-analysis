@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+.streamlit/secrets.toml
+*.log
+**/.pbi/
+**/localSettings.json
+**/cache.abf
