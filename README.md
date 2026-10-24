@@ -12,7 +12,34 @@
 
 **GitHub repository:** [mamkon/air-quality-analysis-research-analysis](https://github.com/mamkon/air-quality-analysis-research-analysis).
 
-Weather-linked ozone signals can help public-health teams prepare earlier. This dashboard combines an interpretable historical method demonstration with a separately trained modern Ontario location model and operational decision framework. It makes uncertainty, source age and missed-event trade-offs visible without presenting a portfolio model as a validated health advisory.
+This project uses weather data to estimate afternoon ozone in 47 Ontario locations. It asks a practical question: can weather patterns help teams prepare for days when ozone may be higher?
+
+### Why this subject, and who could use it?
+
+Our subject area is **air quality and public-health planning**. Ontario is the study area because this portfolio focuses on communities across the province. We chose ground-level ozone because weather helps explain how it forms and moves. Sunlight helps gases in the air react to form ozone; temperature and wind also matter. See [ECCC's explanation](https://www.canada.ca/en/environment-climate-change/services/air-quality-health-index/weather.html).
+
+| Industry or team | Example use of air-quality data |
+|---|---|
+| Public health | Prepare messages using official air-quality advice |
+| Hospitals | Explore links with breathing-related visits using separate patient data |
+| Schools and childcare | Check official AQHI when planning outdoor activities |
+| Construction and outdoor employers | Review outdoor work timing and breaks alongside official guidance |
+| Government and environmental consulting | Compare locations and identify monitoring needs |
+| Transport and city planning | Study outdoor exposure using additional local data |
+| Pharmacies and suppliers | Compare air-quality patterns with actual sales before changing stock |
+| Insurance and risk teams | Add environmental context to wider risk studies |
+
+These are possible uses of this type of data. They are not claims that organisations use this dashboard or that the project has proved these benefits.
+
+### How the weather helps prediction
+
+The model learns a pattern from past **temperature, wind speed, sunlight energy and ozone** for the same location and day. It uses the three weather inputs together to estimate afternoon ozone. We then enter forecast weather to make an estimate for a future day.
+
+For example, it checks the pattern learned from previous warm, sunny days, together with wind. Sunshine alone does not guarantee high ozone. Emissions and pollution arriving from elsewhere also matter. We check predictions against a later part of the past data that was kept out of training.
+
+Ontario training ozone comes from CAMS through Open-Meteo: these are model estimates, not direct station readings. The project predicts ozone, not hospital visits or individual illness. The 1973 New York data explain the method only; recent Ontario data train the modern models. Use official AQHI and local advice for health decisions.
+
+Read the [plain-English guide](docs/plain_language_guide.md) for examples and simple definitions. Technical details follow below.
 
 ### Key findings — generated from saved real-source data
 

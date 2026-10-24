@@ -1,12 +1,16 @@
 """Recruiter-facing evidence of transferable analytical skills."""
+from pathlib import Path
+
 import pandas as pd
 import streamlit as st
 
 from src.bootstrap import require_context
 
 require_context("audience.py")
-st.title("Who uses this work?")
+st.title("Who uses air-quality data, and why?")
 st.write("A decision-oriented portfolio by Mercy Mamkon Oyeleke, Data Analytics & Business Intelligence Consultant.")
+st.markdown((Path(__file__).resolve().parents[2] / "docs" / "plain_language_guide.md").read_text(encoding="utf-8-sig"))
+st.subheader("Examples of related jobs")
 rows = [
     ("Public health", "Advisory preparation", "Toronto Public Health; Public Health Ontario", "Epidemiology / health data analyst", "Decision Framework"),
     ("Hospitals", "Respiratory capacity planning", "UHN; Unity Health Toronto", "Clinical / BI analyst", "Overview"),

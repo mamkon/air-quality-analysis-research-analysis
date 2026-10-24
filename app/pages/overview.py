@@ -13,6 +13,9 @@ require_context("overview.py")
 ctx = st.session_state.ctx
 st.title("Cleaner signals. Earlier decisions.")
 st.write(f"Weather-based ozone planning for **{ctx['city']}, Ontario** · {LOCATION_DETAILS[ctx['city']]['region']}.")
+st.write("This dashboard uses temperature, wind and sunlight to estimate afternoon ozone. "
+         "Open **Who Uses This** to learn why we chose this subject, which industries could use the data, "
+         "and how the predictions work in everyday English.")
 available = ctx["ozone_hourly"].loc[lambda f: f.index <= ctx["now"]].dropna()
 current = available.iloc[-1].ozone / 1.96 if len(available) else float("nan")
 forecast = predict(ctx["model"], ctx["future"]) if len(ctx["future"]) else pd.DataFrame()
