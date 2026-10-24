@@ -1,10 +1,16 @@
-# Understanding this project
+# Understanding this research
+
+**Research by Mercy Mamkon Oyeleke, Data Analytics & Business Intelligence Consultant.**
 
 ## Why air quality in Ontario?
 
-Our domain, or subject area, is environmental analytics and public-health planning. We chose Ontario because this portfolio focuses on communities across the province. It covers 47 selected locations, not every address.
+This research focuses on environmental analytics and public-health planning. Its purpose is to turn weather and ozone data into information that is easier to understand and use for planning.
 
-The project estimates afternoon ground-level ozone, one part of air pollution. Weather helps explain ozone patterns. Sunlight helps gases in the air react to form ozone. Temperature and wind also affect its formation and movement. See [ECCC's explanation](https://www.canada.ca/en/environment-climate-change/services/air-quality-health-index/weather.html) and [Ontario's report](https://www.ontario.ca/document/air-quality-ontario-2022-report/key-air-contaminants).
+This research focuses on Ontario to make the analysis relevant to communities across the province. Comparing 47 selected locations allows the dashboard to show local differences instead of treating all of Ontario as one place. These locations do not cover every address.
+
+The research also demonstrates my skills in preparing data, finding patterns, checking predictions and explaining results through a dashboard.
+
+This research estimates afternoon ground-level ozone, one part of air pollution. Ozone was selected because its connection with weather provides a clear question to investigate: can temperature, wind and sunlight help estimate its level? Weather helps explain ozone patterns. Sunlight helps gases in the air react to form ozone. Temperature and wind also affect its formation and movement. See [ECCC's explanation](https://www.canada.ca/en/environment-climate-change/services/air-quality-health-index/weather.html) and [Ontario's report](https://www.ontario.ca/document/air-quality-ontario-2022-report/key-air-contaminants).
 
 ## Which industries could use these data?
 
@@ -23,23 +29,23 @@ These are possible uses of air-quality data, not claims that organisations use t
 
 ## How does it help prediction?
 
-We match past weather with ozone values from the same place and day. The model uses three inputs together:
+This research matches past weather with ozone values from the same place and day. The model uses three inputs together:
 
 - Temperature: how hot the day gets.
 - Wind speed: how quickly air moves. Wind can disperse pollution or bring it from elsewhere.
 - Sunlight energy: how much solar energy reaches the ground during the day.
 
-Multiple linear regression finds a numerical pattern between these inputs and afternoon ozone. We enter forecast weather to estimate ozone for that location. For example, the model uses the pattern learned from past warm, sunny days, together with wind, to estimate ozone under similar forecast conditions. Warm sunshine alone does not guarantee high ozone: emissions and pollution arriving from elsewhere matter too.
+Multiple linear regression was selected because it is a clear starting method: it shows how each weather input relates to ozone while considering the other inputs. This makes the results easier to explain and review. It does not prove cause and effect or guarantee the best possible forecast. The method finds a numerical pattern between these inputs and afternoon ozone. The model then uses forecast weather to estimate ozone for that location. For example, the model uses the pattern learned from past warm, sunny days, together with wind, to estimate ozone under similar forecast conditions. Warm sunshine alone does not guarantee high ozone: emissions and pollution arriving from elsewhere matter too.
 
-We keep the most recent part of the past data out of training, then compare predictions with those source values. This checks how well the model estimates days it did not learn from. The shaded chart range shows uncertainty under the model's assumptions; it is not a guarantee.
+This research keeps the most recent part of the past data out of training, then compares predictions with those source values. This checks how well the model estimates days it did not learn from. The shaded chart range shows uncertainty under the model's assumptions; it is not a guarantee.
 
 ## What are the limits?
 
-Ontario training ozone comes from CAMS through Open-Meteo. These are air-quality model estimates, not direct station readings. The project learns to estimate that source's afternoon ozone. Checking predictions against independent station readings is a future step.
+Ontario training ozone comes from CAMS through Open-Meteo. These are air-quality model estimates, not direct station readings. The model learns to estimate that source's afternoon ozone. Checking predictions against independent station readings is a future step.
 
 New York data from 1973 explain the method only. Recent Ontario data train separate models for the selected locations.
 
-This project estimates ozone levels, not hospital visits, individual illness or medicine sales. Those questions need extra data and testing. Use official AQHI and local advice for health and outdoor activity decisions.
+This research estimates ozone levels, not hospital visits, individual illness or medicine sales. Those questions need extra data and testing. Use official AQHI and local advice for health and outdoor activity decisions.
 
 ## Useful words
 
@@ -47,7 +53,7 @@ This project estimates ozone levels, not hospital visits, individual illness or 
 |---|---|
 | Domain | The subject area |
 | Predictor | Information used to make an estimate, such as temperature |
-| Target | What we want to estimate: afternoon ozone |
+| Target | The value being estimated: afternoon ozone |
 | Correlation | Two things change together; this does not prove cause and effect |
 | Regression | A method for finding a numerical relationship between inputs and an outcome |
 | Holdout data | Past days kept out of training to check predictions |
