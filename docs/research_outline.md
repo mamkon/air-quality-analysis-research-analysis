@@ -32,6 +32,12 @@ This research examines how temperature, wind speed and sunlight relate to ground
 - How closely does the Ontario model estimate source ozone values on later days kept out of training?
 - How could the information support planning, and where are its limits?
 
+## Research Workflow Pipeline
+
+![Process flow showing separate historical analysis and Ontario data collection, preparation, prediction checks, forecasting and dashboard steps](workflow_pipeline.png)
+
+The image shows how this research moves from source data to estimates and planning information. The historical method is separate from the Ontario prediction model.
+
 ## Research outline
 
 | Section | What it explains | Why it matters |

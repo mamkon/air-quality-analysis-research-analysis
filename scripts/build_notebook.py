@@ -54,7 +54,7 @@ def main() -> None:
                      "source": summary.splitlines(keepends=True)})
     overview = (ROOT / "docs" / "research_outline.md").read_text(encoding="utf-8")
     cells.insert(0, {"cell_type": "markdown", "metadata": {},
-                     "source": overview.splitlines(keepends=True)})
+                     "source": overview.replace("(workflow_pipeline.png)", "(../docs/workflow_pipeline.png)").splitlines(keepends=True)})
     labels = ["1. Data sources and missing values", "2. Missing-data choices",
               "3. Distributions and weather relationships", "4. Historical model comparison",
               "5. Analytical charts", "6. Historical errors and diagnostic checks"]

@@ -51,6 +51,12 @@ Ontario training ozone comes from CAMS through Open-Meteo: these are model estim
 
 Read the [plain-English guide](docs/plain_language_guide.md) for examples and simple definitions. Technical details follow below. The [reviewed research notebook](notebooks/research_reviewed.ipynb) contains the cleaned outline and executed historical analysis.
 
+### Research Workflow Pipeline
+
+![Process flow showing separate historical analysis and Ontario data collection, preparation, prediction checks, forecasting and dashboard steps](docs/workflow_pipeline.png)
+
+The image shows how this research moves from source data to estimates and planning information. The historical method is separate from the Ontario prediction model.
+
 ### Key findings — generated from saved real-source data
 
 - Historical baseline: **111 complete cases**, adjusted R² **0.595**.

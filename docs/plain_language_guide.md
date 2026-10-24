@@ -10,6 +10,12 @@ The objectives are to understand the data, explain missing-data choices, explore
 
 See the [full research outline](research_outline.md) for the reasons, research questions and section plan.
 
+## Research Workflow Pipeline
+
+![Process flow showing separate historical analysis and Ontario data collection, preparation, prediction checks, forecasting and dashboard steps](workflow_pipeline.png)
+
+The image shows how this research moves from source data to estimates and planning information. The historical method is separate from the Ontario prediction model.
+
 ## Why air quality in Ontario?
 
 This research focuses on environmental analytics and public-health planning. Its purpose is to turn weather and ozone data into information that is easier to understand and use for planning.
