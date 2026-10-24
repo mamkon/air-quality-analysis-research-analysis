@@ -1,8 +1,8 @@
-# Understanding this research
+# Understanding This Research
 
 **Research by Mercy Mamkon Oyeleke, Data Analytics & Business Intelligence Consultant.**
 
-## Research aim and objectives
+## Research Aim and Objectives
 
 This research examines how temperature, wind speed and sunlight relate to ground-level ozone, and whether these relationships can help estimate afternoon ozone in selected Ontario locations.
 
@@ -16,7 +16,7 @@ See the [full research outline](research_outline.md) for the reasons, research q
 
 The image shows how this research moves from source data to estimates and planning information. The historical method is separate from the Ontario prediction model.
 
-## Why air quality in Ontario?
+## Why Air Quality in Ontario?
 
 This research focuses on environmental analytics and public-health planning. Its purpose is to turn weather and ozone data into information that is easier to understand and use for planning.
 
@@ -26,7 +26,7 @@ The research also demonstrates my skills in preparing data, finding patterns, ch
 
 This research estimates afternoon ground-level ozone, one part of air pollution. Ozone was selected because its connection with weather provides a clear question to investigate: can temperature, wind and sunlight help estimate its level? Weather helps explain ozone patterns. Sunlight helps gases in the air react to form ozone. Temperature and wind also affect its formation and movement. See [ECCC's explanation](https://www.canada.ca/en/environment-climate-change/services/air-quality-health-index/weather.html) and [Ontario's report](https://www.ontario.ca/document/air-quality-ontario-2022-report/key-air-contaminants).
 
-## Which industries could use these data?
+## Which Industries Could Use These Data?
 
 These are possible uses of air-quality data, not claims that organisations use this dashboard or that its benefits have been proved.
 
@@ -41,7 +41,7 @@ These are possible uses of air-quality data, not claims that organisations use t
 | Pharmacies and suppliers | Compare air-quality patterns with actual sales before changing stock |
 | Insurance and risk teams | Add pollution context to studies using suitable exposure and claims data |
 
-## How does it help prediction?
+## How Does It Help Prediction?
 
 This research matches past weather with ozone values from the same place and day. The model uses three inputs together:
 
@@ -53,7 +53,7 @@ Multiple linear regression was selected because it is a clear starting method: i
 
 This research keeps the most recent part of the past data out of training, then compares predictions with those source values. This checks how well the model estimates days it did not learn from. The shaded chart range shows uncertainty under the model's assumptions; it is not a guarantee.
 
-## What are the limits?
+## What Are The Limits?
 
 Ontario training ozone comes from CAMS through Open-Meteo. These are air-quality model estimates, not direct station readings. The model learns to estimate that source's afternoon ozone. Checking predictions against independent station readings is a future step.
 
@@ -61,7 +61,7 @@ New York data from 1973 explain the method only. Recent Ontario data train separ
 
 This research estimates ozone levels, not hospital visits, individual illness or medicine sales. Those questions need extra data and testing. Use official AQHI and local advice for health and outdoor activity decisions.
 
-## Useful words
+## Useful Words
 
 | Term | Everyday meaning |
 |---|---|

@@ -2,6 +2,7 @@
 import contextlib
 import io
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -72,6 +73,17 @@ def main() -> None:
         "The calculations above describe historical New York data only. The Ontario dashboard fits separate recent location models and checks them on later days kept out of training.\n",
         "Ontario source ozone is modelled CAMS data, not independent station readings. See ../docs/plain_language_guide.md for industry examples and ../docs/research_outline.md for objectives and boundaries.\n",
         "The native Power BI report is still awaiting a successful display check; no verified PBIX is claimed.\n"]})
+    # Apply the researcher's heading style to all generated Markdown cells.
+    for cell in cells:
+        if cell["cell_type"] == "markdown":
+            lines = []
+            for line in "".join(cell["source"]).splitlines(keepends=True):
+                if re.match(r"^#{1,6} ", line):
+                    line = re.sub(r"[A-Za-z]+(?:[-'][A-Za-z]+)*",
+                                  lambda match: match[0].lower() if match[0].lower() in {"and", "or", "in"}
+                                  else (match[0] if match[0].isupper() else match[0][0].upper() + match[0][1:]), line)
+                lines.append(line)
+            cell["source"] = lines
     notebook = {"cells": cells, "metadata": {"kernelspec": {"display_name": "Python 3", "language": "python", "name": "python3"},
                                             "language_info": {"name": "python", "version": "3.11"}}, "nbformat": 4, "nbformat_minor": 5}
     (ROOT / "notebooks").mkdir(exist_ok=True)

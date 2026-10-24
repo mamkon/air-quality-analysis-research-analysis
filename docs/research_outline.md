@@ -11,11 +11,11 @@ Ozone was selected because its formation and movement are linked to weather. Tem
 
 This research demonstrates my ability to prepare data, explain analytical choices, check predictions and present useful findings. Its purpose is to support understanding and planning, while making uncertainty clear.
 
-## Research aim
+## Research Aim
 
 This research examines how temperature, wind speed and sunlight relate to ground-level ozone, and whether these relationships can help estimate afternoon ozone in selected Ontario locations.
 
-## Research objectives
+## Research Objectives
 
 1. **Understand the data:** describe its sources, dates, units, coverage and missing values so the analysis is based on clearly defined information.
 2. **Choose a data preparation approach:** compare complete cases, mean filling and median filling in the historical demonstration, and explain their limitations. Keep filled ozone responses out of modern prediction checks.
@@ -24,7 +24,7 @@ This research examines how temperature, wind speed and sunlight relate to ground
 5. **Check predictions:** evaluate the Ontario model on later days kept out of training, report errors in ozone units and show uncertainty. Keep training results separate from results on unseen days.
 6. **Explain practical uses:** present findings in a dashboard and describe possible uses for public health, healthcare, schools, outdoor employers and environmental teams, including what extra evidence each use needs.
 
-## Research questions
+## Research Questions
 
 - How do temperature, wind and sunlight relate to afternoon ozone?
 - How do missing-data choices change the historical analysis?
@@ -38,7 +38,7 @@ This research examines how temperature, wind speed and sunlight relate to ground
 
 The image shows how this research moves from source data to estimates and planning information. The historical method is separate from the Ontario prediction model.
 
-## Research outline
+## Research Outline
 
 | Section | What it explains | Why it matters |
 |---|---|---|
@@ -52,7 +52,7 @@ The image shows how this research moves from source data to estimates and planni
 | 8. Dashboard and industry applications | How readers explore results and possible uses | Connects analysis with practical questions |
 | 9. Limitations and next steps | What the research cannot establish and what to test next | Prevents conclusions that go beyond the evidence |
 
-## Boundaries of the research
+## Boundaries Of The Research
 
 The 1973 New York dataset is a separate method demonstration, not the source of today's Ontario predictions. The Ontario model uses recent data for each selected location. Modern training ozone comes from CAMS through Open-Meteo and represents model estimates, not independent station measurements.
 
@@ -62,7 +62,7 @@ Complete-case analysis avoids inserting invented response values but can still i
 
 The research does not establish cause and effect, predict hospital visits, validate health alerts or demonstrate compliance with official air-quality standards. Its afternoon ozone tiers are illustrative and differ from official AQHI and eight-hour regulatory measures. Independent station validation and testing across seasons are important next steps.
 
-## Corrections made after reviewing the draft
+## Corrections Made After Reviewing The Draft
 
 The reviewed notebook reruns the analysis from the saved canonical data instead of copying the draft's headline figures. Its raw multiple-regression training RMSE is about 20.80 ppb, and the exponentiated log-model training RMSE is about 19.53 ppb. The draft's 17.91 ppb result was not reproduced. These figures describe fit to training rows, not future forecasting accuracy.
 

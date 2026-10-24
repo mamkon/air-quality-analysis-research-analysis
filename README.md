@@ -1,6 +1,6 @@
 # AIR QUALITY ANALYSIS RESEARCH ANALYSIS
 
-## Ontario air quality — Power BI Desktop and reproducible Python analysis
+## Ontario Air Quality — Power BI Desktop and Reproducible Python Analysis
 
 ![Python](https://img.shields.io/badge/Python-3.11-3776AB) ![Power BI](https://img.shields.io/badge/Power_BI-Desktop-F2C811) ![Streamlit](https://img.shields.io/badge/Streamlit-dashboard-FF4B4B) [![CI](https://github.com/mamkon/air-quality-analysis-research-analysis/actions/workflows/ci.yml/badge.svg)](https://github.com/mamkon/air-quality-analysis-research-analysis/actions/workflows/ci.yml) ![License](https://img.shields.io/badge/license-MIT-green)
 
@@ -14,7 +14,7 @@
 
 This research uses weather data to estimate afternoon ozone in 47 Ontario locations. It asks a practical question: can weather patterns help teams prepare for days when ozone may be higher?
 
-### Research aim and objectives
+### Research Aim and Objectives
 
 This research examines how temperature, wind speed and sunlight relate to ground-level ozone, and whether these relationships can help estimate afternoon ozone in selected Ontario locations.
 
@@ -22,7 +22,7 @@ The objectives are to understand the data, explain missing-data choices, explore
 
 See the [full research outline](docs/research_outline.md) for the reasons, research questions and section plan.
 
-### Why this subject, and who could use it?
+### Why This Subject, and Who Could Use It?
 
 This research focuses on **air quality and public-health planning** to turn environmental data into information that can support practical planning. Ontario was selected to make the work relevant to communities across the province. Comparing 47 locations shows local differences instead of treating the whole province as one place. Ground-level ozone was selected because weather helps explain how it forms and moves. Sunlight helps gases in the air react to form ozone; temperature and wind also matter. See [ECCC's explanation](https://www.canada.ca/en/environment-climate-change/services/air-quality-health-index/weather.html).
 
@@ -39,7 +39,7 @@ This research focuses on **air quality and public-health planning** to turn envi
 
 These are possible uses of this type of data. They are not claims that organisations use this dashboard or that the project has proved these benefits.
 
-### How the weather helps prediction
+### How The Weather Helps Prediction
 
 This research demonstrates my skills in preparing data, finding patterns, checking predictions and explaining results. Multiple linear regression was selected as a clear starting method because its results can be explained and reviewed. It does not prove cause and effect or guarantee the best possible forecast.
 
@@ -57,7 +57,7 @@ Read the [plain-English guide](docs/plain_language_guide.md) for examples and si
 
 The image shows how this research moves from source data to estimates and planning information. The historical method is separate from the Ontario prediction model.
 
-### Key findings — generated from saved real-source data
+### Key Findings — Generated From Saved Real-source Data
 
 - Historical baseline: **111 complete cases**, adjusted R² **0.595**.
 - Modern Toronto model: **90 complete days**, adjusted R² **0.437**.
@@ -67,11 +67,11 @@ These are dated snapshot findings, not promised live performance. Regenerate the
 
 ![Executive overview](docs/screenshot.png)
 
-### Business question
+### Business Question
 
 Can temperature, wind and solar radiation predict high-ozone days well enough to trigger early public-health action, and what should decision-makers do? The dashboard supports evaluation of that question; it does not claim the current model is ready to issue alerts.
 
-### Sources and attribution
+### Sources and Attribution
 
 | Source | Endpoint / provenance | Use |
 |---|---|---|
@@ -104,7 +104,7 @@ No endpoint replacement was necessary. Implementation adaptations: UTC epoch con
 
 API calls are cached one hour for live data and one day for archive/baseline data. Requests have bounded timeouts and retries. Every city has genuine timestamped JSON snapshots, plus derived daily CSVs; API errors display a fallback banner. Snapshot dates are never shifted to today. If saved forecasts expire, the overview shows current predictions as unavailable while historical analysis and the simulator remain usable. Snapshot refresh is an explicit maintenance command; the app never overwrites committed files.
 
-### Decision framework
+### Decision Framework
 
 Illustrative afternoon-mean tiers: Good <50; Moderate 50–<60; High 60–<70; Very High ≥70 ppb, configurable in `src/config.py`. Public-health messaging, hospital capacity, school activities, outdoor work, city operations and pharmacy stock each have an accountable decision-maker and success measure.
 
@@ -112,7 +112,7 @@ The [2025 Canadian CAAQS](https://ccme.ca/en/air-quality-report) ozone standard 
 
 Prioritise recall during screening design because missed events can harm vulnerable groups; weigh false-alarm fatigue and operational cost with partners. The slider explores held-out behaviour, not an independently validated choice of policy. False-alarm rate means FP/(FP+TN); zero denominators remain missing. No health outcome data are used to quantify benefit.
 
-### Who uses this
+### Who Uses This
 
 Public health and hospitals can assess communications and respiratory capacity planning. Government/environment, ESG consulting, insurance, utilities, urban planning/transit and pharmacy teams can examine monitoring, exposure and preparedness workflows. The **Who Uses This** page maps example organisations and job titles to evidence of skills; these are illustrative, not endorsements or current vacancies.
 
@@ -134,7 +134,7 @@ flowchart LR
 
 `powerbi/` holds the native PBIP project, PBIR report pages, TMSL semantic model, DAX measures and CSV evidence. Rebuild with `python scripts/build_powerbi.py`; validate native JSON with `python scripts/validate_powerbi.py`. Power BI's in-app Refresh reloads the embedded snapshot, while new API data and retraining require the documented Python refresh/rebuild workflow.
 
-### Run locally
+### Run Locally
 
 ```bash
 python -m venv .venv
@@ -152,7 +152,7 @@ python scripts/build_docs.py     # regenerate findings and daily CSVs
 python scripts/verify_live.py    # opt-in network integration test
 ```
 
-### Deploy on Streamlit Community Cloud
+### Deploy On Streamlit Community Cloud
 
 To publish the optional live Python app, create an app in Streamlit Community Cloud from this GitHub repository. Set the entry point to `app/streamlit_app.py` and select Python 3.11 in advanced settings. Deploy, verify source timestamps, then replace the live-link placeholder above. Core functionality requires no API key. The Power BI Desktop report can be opened locally independently of Streamlit.
 
@@ -165,13 +165,13 @@ ruff check .
 
 Default tests need no internet: source JSON mocks cover every API, including outage fallback; known-value tests cover conversion, daily energy, missing-hour gates, DST, model fitting, chronological isolation and alert boundaries. Streamlit AppTest executes every page and the entry point with APIs disabled. `scripts/verify_live.py` checks live retrieval for all configured Ontario locations, every page and entry routing; its dated evidence is saved in `docs/live_verification.json`. CI runs pytest and ruff on pushes and PRs. Local results are recorded in `docs/verification.md`.
 
-### Limitations and next steps
+### Limitations and Next Steps
 
 Correlation is not causation. Omitted emissions, traffic, humidity and transport, modelled ozone, short seasonal training windows, missingness, serial dependence and weather forecast error limit operational use. An interval conditional on OLS assumptions is not a calibrated health-risk bound. Training R² is not an alert-readiness measure.
 
 Next: station-level ECCC validation, rolling-origin forecast evaluation, governed ER-outcome linkage, SARIMAX and gradient-boosting comparisons, calibrated alerts and opt-in notifications. Check official AQHI and local public-health advice for real health decisions.
 
-### Skills demonstrated
+### Skills Demonstrated
 
 API integration and resilience; pandas time alignment and unit discipline; statistical inference and diagnostics; chronological model validation; accessible Plotly/Streamlit communication; decision analytics; reproducible testing and CI; transparent limitations.
 
