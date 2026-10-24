@@ -48,7 +48,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Override full-day mean solar (W/m²)'"
+                  "Value": "'Override Full-day Mean Solar (W/m²)'"
                 }
               }
             },

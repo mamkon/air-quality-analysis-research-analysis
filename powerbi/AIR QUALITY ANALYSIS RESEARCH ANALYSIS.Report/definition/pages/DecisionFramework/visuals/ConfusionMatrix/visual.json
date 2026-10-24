@@ -84,7 +84,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Held-out confusion matrix (counts)'"
+                  "Value": "'Held-out Confusion Matrix (counts)'"
                 }
               }
             },

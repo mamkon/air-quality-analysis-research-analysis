@@ -94,7 +94,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Weather-based afternoon ozone outlook (ppb) with 95% bounds'"
+                  "Value": "'Weather-based Afternoon Ozone Outlook (ppb) With 95% Bounds'"
                 }
               }
             },

@@ -276,22 +276,22 @@
           },
           {
             "name": "True Positives",
-            "expression": "COUNTROWS(FILTER(Validation, Validation[ActualOzone] >= [High Cutoff ppb] && Validation[PredictedOzone] >= [High Cutoff ppb]))",
+            "expression": "COALESCE(COUNTROWS(FILTER(Validation, Validation[ActualOzone] >= [High Cutoff ppb] && Validation[PredictedOzone] >= [High Cutoff ppb])), 0)",
             "formatString": "0"
           },
           {
             "name": "False Positives",
-            "expression": "COUNTROWS(FILTER(Validation, Validation[ActualOzone] < [High Cutoff ppb] && Validation[PredictedOzone] >= [High Cutoff ppb]))",
+            "expression": "COALESCE(COUNTROWS(FILTER(Validation, Validation[ActualOzone] < [High Cutoff ppb] && Validation[PredictedOzone] >= [High Cutoff ppb])), 0)",
             "formatString": "0"
           },
           {
             "name": "False Negatives",
-            "expression": "COUNTROWS(FILTER(Validation, Validation[ActualOzone] >= [High Cutoff ppb] && Validation[PredictedOzone] < [High Cutoff ppb]))",
+            "expression": "COALESCE(COUNTROWS(FILTER(Validation, Validation[ActualOzone] >= [High Cutoff ppb] && Validation[PredictedOzone] < [High Cutoff ppb])), 0)",
             "formatString": "0"
           },
           {
             "name": "True Negatives",
-            "expression": "COUNTROWS(FILTER(Validation, Validation[ActualOzone] < [High Cutoff ppb] && Validation[PredictedOzone] < [High Cutoff ppb]))",
+            "expression": "COALESCE(COUNTROWS(FILTER(Validation, Validation[ActualOzone] < [High Cutoff ppb] && Validation[PredictedOzone] < [High Cutoff ppb])), 0)",
             "formatString": "0"
           },
           {
@@ -1081,7 +1081,8 @@
             "name": "p",
             "dataType": "double",
             "sourceColumn": "p",
-            "summarizeBy": "none"
+            "summarizeBy": "none",
+            "formatString": "0.00E+00"
           }
         ],
         "partitions": [
@@ -1155,7 +1156,8 @@
             "name": "PValue",
             "dataType": "double",
             "sourceColumn": "PValue",
-            "summarizeBy": "none"
+            "summarizeBy": "none",
+            "formatString": "0.00E+00"
           }
         ],
         "partitions": [

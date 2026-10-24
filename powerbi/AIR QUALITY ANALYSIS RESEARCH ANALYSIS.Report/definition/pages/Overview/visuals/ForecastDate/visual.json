@@ -48,7 +48,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Forecast date (dated snapshot)'"
+                  "Value": "'Forecast Date (dated Snapshot)'"
                 }
               }
             },

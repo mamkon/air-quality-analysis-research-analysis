@@ -76,7 +76,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Shapiro–Wilk: a large p-value does not prove normality'"
+                  "Value": "'Shapiro–Wilk: A Large P-value Does Not Prove Normality'"
                 }
               }
             },

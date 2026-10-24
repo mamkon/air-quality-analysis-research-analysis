@@ -90,7 +90,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Pearson linear and Spearman rank associations'"
+                  "Value": "'Pearson Linear and Spearman Rank Associations'"
                 }
               }
             },

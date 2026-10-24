@@ -48,7 +48,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Preset scenario'"
+                  "Value": "'Preset Scenario'"
                 }
               }
             },
@@ -169,64 +169,54 @@
             }
           }
         }
-      ]
-    }
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "InitialSelection",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "ScenarioPresets"
-              }
-            },
-            "Property": "Scenario"
-          }
-        },
-        "type": "Categorical",
-        "filter": {
-          "Version": 2,
-          "From": [
-            {
-              "Name": "s",
-              "Entity": "ScenarioPresets",
-              "Type": 0
-            }
-          ],
-          "Where": [
-            {
-              "Condition": {
-                "In": {
-                  "Expressions": [
-                    {
-                      "Column": {
-                        "Expression": {
-                          "SourceRef": {
-                            "Source": "s"
+      ],
+      "general": [
+        {
+          "properties": {
+            "filter": {
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "s",
+                    "Entity": "ScenarioPresets",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "s"
+                                }
+                              },
+                              "Property": "Scenario"
+                            }
                           }
-                        },
-                        "Property": "Scenario"
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'Typical summer day'"
+                              }
+                            }
+                          ]
+                        ]
                       }
                     }
-                  ],
-                  "Values": [
-                    [
-                      {
-                        "Literal": {
-                          "Value": "'Typical summer day'"
-                        }
-                      }
-                    ]
-                  ]
-                }
+                  }
+                ]
               }
             }
-          ]
+          }
         }
-      }
-    ]
+      ]
+    }
   }
 }

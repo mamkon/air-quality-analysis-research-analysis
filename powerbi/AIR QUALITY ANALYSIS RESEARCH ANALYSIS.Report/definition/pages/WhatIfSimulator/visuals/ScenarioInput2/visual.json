@@ -48,7 +48,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Effective full-day solar (W/m²)'"
+                  "Value": "'Effective Full-day Solar (W/m²)'"
                 }
               }
             },

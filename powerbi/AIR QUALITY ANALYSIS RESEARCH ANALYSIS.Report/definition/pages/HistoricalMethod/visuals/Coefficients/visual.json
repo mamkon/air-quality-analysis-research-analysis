@@ -76,7 +76,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Multiple OLS coefficients: associations, not causal effects'"
+                  "Value": "'Multiple OLS Coefficients: Associations, Not Causal Effects'"
                 }
               }
             },

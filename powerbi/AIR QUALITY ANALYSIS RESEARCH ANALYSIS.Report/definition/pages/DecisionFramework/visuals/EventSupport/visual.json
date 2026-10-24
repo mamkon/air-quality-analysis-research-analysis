@@ -48,7 +48,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Held-out event days'"
+                  "Value": "'Held-out Event Days'"
                 }
               }
             },

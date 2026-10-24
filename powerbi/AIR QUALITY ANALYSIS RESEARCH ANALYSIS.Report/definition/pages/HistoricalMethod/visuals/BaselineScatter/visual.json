@@ -84,7 +84,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Temperature (°F) versus ozone (ppb), complete cases'"
+                  "Value": "'Temperature (°F) Versus Ozone (ppb), Complete Cases'"
                 }
               }
             },

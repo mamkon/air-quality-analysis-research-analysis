@@ -48,7 +48,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Missed-event rate'"
+                  "Value": "'Missed-event Rate'"
                 }
               }
             },

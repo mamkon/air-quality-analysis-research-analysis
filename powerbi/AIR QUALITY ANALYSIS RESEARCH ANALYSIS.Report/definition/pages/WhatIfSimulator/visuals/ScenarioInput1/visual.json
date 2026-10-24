@@ -48,7 +48,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Effective wind (km/h)'"
+                  "Value": "'Effective Wind (km/h)'"
                 }
               }
             },

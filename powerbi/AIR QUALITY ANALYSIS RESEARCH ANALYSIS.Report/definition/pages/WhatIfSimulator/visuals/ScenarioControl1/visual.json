@@ -48,7 +48,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Override daily mean wind (km/h)'"
+                  "Value": "'Override Daily Mean Wind (km/h)'"
                 }
               }
             },

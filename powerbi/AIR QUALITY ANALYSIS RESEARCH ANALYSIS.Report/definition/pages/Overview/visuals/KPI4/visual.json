@@ -48,7 +48,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Model adjusted R²'"
+                  "Value": "'Model Adjusted R²'"
                 }
               }
             },

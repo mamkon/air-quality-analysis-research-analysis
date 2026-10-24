@@ -48,7 +48,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Forecast afternoon ozone (ppb)'"
+                  "Value": "'Forecast Afternoon Ozone (ppb)'"
                 }
               }
             },

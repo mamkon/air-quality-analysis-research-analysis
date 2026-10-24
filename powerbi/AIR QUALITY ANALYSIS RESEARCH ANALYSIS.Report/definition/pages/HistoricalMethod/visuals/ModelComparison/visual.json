@@ -160,7 +160,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Simple, multiple and log-response OLS (scales differ)'"
+                  "Value": "'Simple, Multiple and Log-response OLS (scales Differ)'"
                 }
               }
             },

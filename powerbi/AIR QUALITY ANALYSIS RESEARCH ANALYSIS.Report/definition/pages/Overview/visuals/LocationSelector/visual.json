@@ -48,7 +48,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Ontario location'"
+                  "Value": "'Ontario Location'"
                 }
               }
             },
@@ -169,64 +169,54 @@
             }
           }
         }
-      ]
-    }
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "InitialSelection",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Locations"
-              }
-            },
-            "Property": "Location"
-          }
-        },
-        "type": "Categorical",
-        "filter": {
-          "Version": 2,
-          "From": [
-            {
-              "Name": "s",
-              "Entity": "Locations",
-              "Type": 0
-            }
-          ],
-          "Where": [
-            {
-              "Condition": {
-                "In": {
-                  "Expressions": [
-                    {
-                      "Column": {
-                        "Expression": {
-                          "SourceRef": {
-                            "Source": "s"
+      ],
+      "general": [
+        {
+          "properties": {
+            "filter": {
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "s",
+                    "Entity": "Locations",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "s"
+                                }
+                              },
+                              "Property": "Location"
+                            }
                           }
-                        },
-                        "Property": "Location"
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'Toronto'"
+                              }
+                            }
+                          ]
+                        ]
                       }
                     }
-                  ],
-                  "Values": [
-                    [
-                      {
-                        "Literal": {
-                          "Value": "'Toronto'"
-                        }
-                      }
-                    ]
-                  ]
-                }
+                  }
+                ]
               }
             }
-          ]
+          }
         }
-      }
-    ]
+      ]
+    }
   }
 }

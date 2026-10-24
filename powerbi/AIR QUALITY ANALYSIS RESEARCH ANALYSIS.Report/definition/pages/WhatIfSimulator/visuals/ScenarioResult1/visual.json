@@ -48,7 +48,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'95% prediction lower (ppb)'"
+                  "Value": "'95% Prediction Lower (ppb)'"
                 }
               }
             },

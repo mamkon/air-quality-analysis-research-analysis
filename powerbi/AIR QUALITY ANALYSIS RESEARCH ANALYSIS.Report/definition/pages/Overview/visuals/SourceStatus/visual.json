@@ -90,7 +90,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Source age and training window'"
+                  "Value": "'Source Age and Training Window'"
                 }
               }
             },

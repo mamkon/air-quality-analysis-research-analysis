@@ -3,7 +3,10 @@
 Full source repository and reproducible refresh pipeline:
 https://github.com/mamkon/air-quality-analysis-research-analysis
 
-Open **AIR QUALITY ANALYSIS RESEARCH ANALYSIS.pbip** in current Power BI Desktop.
+For the simplest opening, download **AIR QUALITY ANALYSIS RESEARCH ANALYSIS.pbix**
+and double-click it in Power BI Desktop. Localhost is not needed.
+
+To edit the source project, open **AIR QUALITY ANALYSIS RESEARCH ANALYSIS.pbip** in current Power BI Desktop.
 Keep its adjacent `.Report` and `.SemanticModel` folders together. If data have
 not yet been imported, select **Home → Refresh**. You can then use **File → Save
 As** to save a standalone `.pbix` copy.
@@ -13,10 +16,10 @@ relationships, Ontario location filters and 40 DAX measures. It is not a screens
 or an embedded web dashboard. The source project uses Microsoft's PBIR/TMSL
 formats, which support version control in GitHub.
 
-**Current verification:** the native definition schemas and OLS scenario arithmetic
-pass validation, but this environment's Desktop application stayed blank while
-opening the project. Native rendering and a standalone `.pbix` are not yet verified.
-See `docs/powerbi_verification.md` in the repository.
+**Desktop verification:** all seven pages now render in Power BI Desktop. Location,
+alert-cutoff and weather-preset controls were exercised. The standalone `.pbix`
+contains the imported data and all 75 native visuals. See
+`docs/powerbi_verification.md` for the checks and their limits.
 
 ## Pages
 

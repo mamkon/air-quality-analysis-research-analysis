@@ -48,7 +48,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'False-alarm rate: FP/(FP+TN)'"
+                  "Value": "'False-alarm Rate: FP/(FP+TN)'"
                 }
               }
             },

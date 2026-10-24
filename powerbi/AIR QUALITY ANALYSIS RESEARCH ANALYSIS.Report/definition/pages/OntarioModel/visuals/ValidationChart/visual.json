@@ -80,7 +80,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Held-out reference versus prediction (ppb)'"
+                  "Value": "'Held-out Reference Versus Prediction (ppb)'"
                 }
               }
             },

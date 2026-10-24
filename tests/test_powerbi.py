@@ -55,3 +55,15 @@ def test_powerbi_exports_keep_unknown_aqhi() -> None:
     assert len(summary) == 47
     assert pd.isna(summary.loc["Kenora", "AQHI"])
     assert pd.notna(summary.loc["Ottawa", "AQHI"])
+
+
+def test_native_slicers_select_without_hiding_other_locations() -> None:
+    """Default Toronto must cross-filter the page while retaining other choices."""
+    report = next(PBI.glob("*.Report"))
+    assert json.loads((report / "definition/version.json").read_text())["version"] == "2.0.0"
+    for path in report.glob("definition/pages/*/visuals/LocationSelector/visual.json"):
+        visual = json.loads(path.read_text())
+        assert "filterConfig" not in visual
+        selection = visual["visual"]["objects"]["general"][0]["properties"]["filter"]["filter"]
+        assert selection["From"][0]["Entity"] == "Locations"
+        assert selection["Where"][0]["Condition"]["In"]["Values"] == [[{"Literal": {"Value": "'Toronto'"}}]]

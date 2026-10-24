@@ -84,7 +84,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Residual (ppb) versus prediction (ppb)'"
+                  "Value": "'Residual (ppb) Versus Prediction (ppb)'"
                 }
               }
             },

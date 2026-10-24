@@ -1,14 +1,14 @@
 # AIR QUALITY ANALYSIS RESEARCH ANALYSIS
 
-## Ontario Air Quality â€” Power BI Desktop and Reproducible Python Analysis
+## Ontario Air Quality — Power BI Desktop and Reproducible Python Analysis
 
 ![Python](https://img.shields.io/badge/Python-3.11-3776AB) ![Power BI](https://img.shields.io/badge/Power_BI-Desktop-F2C811) ![Streamlit](https://img.shields.io/badge/Streamlit-dashboard-FF4B4B) [![CI](https://github.com/mamkon/air-quality-analysis-research-analysis/actions/workflows/ci.yml/badge.svg)](https://github.com/mamkon/air-quality-analysis-research-analysis/actions/workflows/ci.yml) ![License](https://img.shields.io/badge/license-MIT-green)
 
-**Live Python app:** _Add your Streamlit Community Cloud URL after deployment._ GitHub CI has passed Ruff and all 96 tests on Python 3.11.
+**Live Python app:** _Add your Streamlit Community Cloud URL after deployment._ The CI badge links to the latest Python 3.11 checks.
 
-**Power BI Desktop:** open [AIR QUALITY ANALYSIS RESEARCH ANALYSIS.pbip](powerbi/AIR%20QUALITY%20ANALYSIS%20RESEARCH%20ANALYSIS.pbip), keeping the adjacent report/model folders together. See the [Power BI guide](powerbi/README.md) for opening, refreshing and saving a standalone `.pbix`. The native report contains seven editable pages, 23 import tables and 40 DAX measures. It uses a dated, portable research snapshot; the Python/Streamlit application is the live API version.
+**Power BI Desktop:** download [the standalone dashboard](powerbi/AIR%20QUALITY%20ANALYSIS%20RESEARCH%20ANALYSIS.pbix) to open the report with its data. For the editable source, open [AIR QUALITY ANALYSIS RESEARCH ANALYSIS.pbip](powerbi/AIR%20QUALITY%20ANALYSIS%20RESEARCH%20ANALYSIS.pbip), keeping the adjacent report/model folders together. See the [Power BI guide](powerbi/README.md) for opening, refreshing and saving a standalone `.pbix`. The native report contains seven editable pages, 23 import tables and 40 DAX measures. It uses a dated, portable research snapshot; the Python/Streamlit application is the live API version.
 
-**Verification status:** native JSON schemas and exported scenario arithmetic pass validation. The installed Desktop application remained blank when opening the project, so report rendering and a standalone `.pbix` are not yet verified. See [Power BI verification](docs/powerbi_verification.md).
+**Verification status:** all seven native pages render in Power BI Desktop. Location, alert-cutoff and weather-preset controls were checked, and the standalone `.pbix` includes its data. See [Power BI verification](docs/powerbi_verification.md).
 
 **GitHub repository:** [mamkon/air-quality-analysis-research-analysis](https://github.com/mamkon/air-quality-analysis-research-analysis).
 
@@ -57,7 +57,7 @@ Read the [plain-English guide](docs/plain_language_guide.md) for examples and si
 
 The image shows how this research moves from source data to estimates and planning information. The historical method is separate from the Ontario prediction model.
 
-### Key Findings â€” Generated From Saved Real-source Data
+### Key Findings — Generated From Saved Real-source Data
 
 - Historical baseline: **{{BASE_N}} complete cases**, adjusted RÂ² **{{BASE_R2}}**.
 - Modern Toronto model: **{{GTA_N}} complete days**, adjusted RÂ² **{{GTA_R2}}**.
@@ -175,4 +175,4 @@ Next: station-level ECCC validation, rolling-origin forecast evaluation, governe
 
 API integration and resilience; pandas time alignment and unit discipline; statistical inference and diagnostics; chronological model validation; accessible Plotly/Streamlit communication; decision analytics; reproducible testing and CI; transparent limitations.
 
-**Author:** Mercy Mamkon Oyeleke, Data Analytics & Business Intelligence Consultant Â· [LinkedIn â€” add profile URL](https://www.linkedin.com/)
+**Author:** Mercy Mamkon Oyeleke, Data Analytics & Business Intelligence Consultant Â· [LinkedIn — add profile URL](https://www.linkedin.com/)

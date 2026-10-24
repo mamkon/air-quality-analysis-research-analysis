@@ -48,7 +48,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Effective temperature (°C)'"
+                  "Value": "'Effective Temperature (°C)'"
                 }
               }
             },

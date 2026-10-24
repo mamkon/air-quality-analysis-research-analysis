@@ -3,10 +3,10 @@
   "name": "Footer",
   "position": {
     "x": 24,
-    "y": 844,
+    "y": 836,
     "z": 0,
     "width": 1232,
-    "height": 48,
+    "height": 60,
     "tabOrder": 8464
   },
   "visual": {

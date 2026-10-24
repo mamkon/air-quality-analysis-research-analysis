@@ -199,6 +199,8 @@ def dax_measures() -> list[dict]:
         "Baseline Residual": "AVERAGE(Baseline[Residual])",
     }
     percent = {"Precision", "Recall", "False Alarm Rate", "Missed Event Rate"}
+    for name in ("True Positives", "True Negatives", "False Positives", "False Negatives"):
+        expressions[name] = "COALESCE(" + expressions[name] + ", 0)"
     integer = {"Training Days", "Validation Days", "Event Support", "True Positives", "True Negatives", "False Positives", "False Negatives", "Confusion Count"}
     text = {"Selected Location", "Snapshot Forecast Date", "Illustrative Risk Tier", "Scenario Tier", "Scenario Extrapolation"}
     return [{"name": name, "expression": value, **({} if name in text else {"formatString": "0.0%" if name in percent else "0" if name in integer else "0.00"})}
@@ -216,6 +218,9 @@ def build_model() -> None:
         encoded = base64.b64encode(compressed).decode()
         columns = [{"name": column, "dataType": "double" if column in numeric else "string",
                     "sourceColumn": column, "summarizeBy": "none"} for column in frame]
+        for column in columns:
+            if column["name"] in {"p", "P Value", "BP p", "JB p", "PValue"}:
+                column["formatString"] = "0.00E+00"
         header = "{" + ",".join(json.dumps(c, ensure_ascii=False) for c in frame.columns) + "}"
         typing = "{" + ",".join("{" + json.dumps(c, ensure_ascii=False) + ", " + ("type number" if c in numeric else "type text") + "}" for c in frame.columns) + "}"
         expression = ["let", f'    Rows = Json.Document(Binary.Decompress(Binary.FromText("{encoded}", BinaryEncoding.Base64), Compression.Deflate)),',
@@ -250,6 +255,7 @@ def field(table: str, column: str, measure: bool = False) -> dict:
 def visual(page: str, name: str, kind: str, x: int, y: int, width: int, height: int,
            title: str = "", roles: dict | None = None, objects: dict | None = None, selected: tuple | None = None) -> None:
     """Write a native PBIR visual with explicit query roles and accessible title."""
+    title = " ".join(word if word in {"and", "or", "in"} else word[:1].upper() + word[1:] for word in title.split(" "))
     config = {"visualType": kind, "drillFilterOtherVisuals": True}
     if roles:
         config["query"] = {"queryState": {role: {"projections": projections} for role, projections in roles.items()}}
@@ -264,11 +270,10 @@ def visual(page: str, name: str, kind: str, x: int, y: int, width: int, height: 
                "position": {"x": x, "y": y, "z": 0, "width": width, "height": height, "tabOrder": y * 10 + x}, "visual": config}
     if selected:
         table, column, value = selected
-        expression = {"Column": {"Expression": {"SourceRef": {"Entity": table}}, "Property": column}}
         source = {"Column": {"Expression": {"SourceRef": {"Source": "s"}}, "Property": column}}
-        content["filterConfig"] = {"filters": [{"name": "InitialSelection", "field": expression, "type": "Categorical",
-            "filter": {"Version": 2, "From": [{"Name": "s", "Entity": table, "Type": 0}],
-                       "Where": [{"Condition": {"In": {"Expressions": [source], "Values": [[{"Literal": {"Value": "'" + str(value) + "'" if isinstance(value, str) else str(value) + "L"}}]]}}}]}}]}
+        selection_filter = {"Version": 2, "From": [{"Name": "s", "Entity": table, "Type": 0}],
+            "Where": [{"Condition": {"In": {"Expressions": [source], "Values": [[{"Literal": {"Value": "'" + str(value) + "'" if isinstance(value, str) else str(value) + "L"}}]]}}}]}
+        config.setdefault("objects", {})["general"] = [{"properties": {"filter": {"filter": selection_filter}}}]
     write_json(REPORT / "definition" / "pages" / page / "visuals" / name / "visual.json", content)
 
 
@@ -300,11 +305,11 @@ def page_frame(code: str, title: str, subtitle: str, location: bool = False) -> 
     """Set page dimensions, source context and optional Ontario selectors."""
     write_json(REPORT / "definition" / "pages" / code / "page.json", {
         "$schema": f"{SCHEMA}/item/report/definition/page/2.0.0/schema.json", "name": code,
-        "displayName": title, "displayOption": "FitToPage", "height": 900, "width": 1280,
+        "displayName": {"Overview": "Overview", "HistoricalMethod": "Historical Method", "OntarioModel": "Ontario Model", "DecisionFramework": "Decision Framework", "WhatIfSimulator": "What-If Simulator", "WhoUsesThis": "Who Uses This", "Limitations": "Limitations"}[code], "displayOption": "FitToPage", "height": 900, "width": 1280,
         "objects": {"background": [{"properties": {"color": {"solid": {"color": literal("#F2F6F9")}}, "transparency": literal(0)}}]}})
-    textbox(code, "Heading", title, 24, 14, 1232, 54, 25)
+    textbox(code, "Heading", title, 24, 14, 1232, 58, 25)
     textbox(code, "Subtitle", subtitle, 24, 74, 1232, 54, 11)
-    textbox(code, "Footer", "Mercy Mamkon Oyeleke | Data Analytics & Business Intelligence Consultant\nResearch snapshot from timestamped Open-Meteo / CAMS and ECCC sources. Illustrative planning; not a health advisory.", 24, 844, 1232, 48, 9)
+    textbox(code, "Footer", "Mercy Mamkon Oyeleke | Data Analytics & Business Intelligence Consultant\nResearch snapshot from timestamped Open-Meteo / CAMS and ECCC sources. Illustrative planning; not a health advisory.", 24, 836, 1232, 60, 9)
     if location:
         slicer(code, "RegionSelector", "Locations", "Region", 24, 140, 330, "Ontario region")
         slicer(code, "LocationSelector", "Locations", "Location", 370, 140, 330, "Ontario location", "Toronto")
@@ -317,11 +322,9 @@ def build_report() -> None:
         "artifacts": [{"report": {"path": REPORT.name}}], "settings": {"enableAutoRecovery": True}})
     write_json(REPORT / "definition.pbir", {"$schema": f"{SCHEMA}/item/report/definitionProperties/2.0.0/schema.json",
         "version": "4.0", "datasetReference": {"byPath": {"path": "../" + MODEL.name}}})
-    write_json(REPORT / "definition" / "version.json", {"$schema": f"{SCHEMA}/item/report/definition/versionMetadata/1.0.0/schema.json", "version": "4.0.0"})
+    write_json(REPORT / "definition" / "version.json", {"$schema": f"{SCHEMA}/item/report/definition/versionMetadata/1.0.0/schema.json", "version": "2.0.0"})
     write_json(REPORT / "definition" / "pages" / "pages.json", {"$schema": f"{SCHEMA}/item/report/definition/pagesMetadata/1.0.0/schema.json", "pageOrder": codes, "activePageName": "Overview"})
-    write_json(REPORT / "definition" / "report.json", {"$schema": f"{SCHEMA}/item/report/definition/report/3.0.0/schema.json",
-        "themeCollection": {"baseTheme": {"name": "CY24SU06", "type": "SharedResources", "reportVersionAtImport": {"visual": "1.8.0", "report": "2.0.0", "page": "1.3.0"}}},
-        "settings": {"useStylableVisualContainerHeader": True, "useEnhancedTooltips": True}})
+    write_json(REPORT / "definition" / "report.json", {"$schema":"https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.2.0/schema.json","themeCollection":{"baseTheme":{"name":"CY26SU04","reportVersionAtImport":{"visual":"2.8.0","report":"3.2.0","page":"2.3.1"},"type":"SharedResources"}},"objects":{"section":[{"properties":{"verticalAlignment":{"expr":{"Literal":{"Value":"'Top'"}}}}}]},"resourcePackages":[{"name":"SharedResources","type":"SharedResources","items":[{"name":"CY26SU04","path":"BaseThemes/CY26SU04.json","type":"BaseTheme"}]}],"settings":{"useStylableVisualContainerHeader":True,"exportDataMode":"AllowSummarized","defaultDrillFilterOtherVisuals":True,"allowChangeFilterTypes":True,"useEnhancedTooltips":True,"useDefaultAggregateDisplayName":True}})
     page_frame("Overview", "Ontario Air Quality | Research Overview", "47 Ontario locations • Select one location • Forecast and source dates remain visible • Native Power BI / DAX", True)
     card("Overview", "ForecastDate", "Snapshot Forecast Date", 720, 140, 536, "Forecast date (dated snapshot)")
     for i, (measure, title) in enumerate([("Latest Ozone ppb", "Latest reference ozone (ppb)"), ("Forecast Ozone ppb", "Forecast afternoon ozone (ppb)"), ("Illustrative Risk Tier", "Illustrative ozone tier"), ("Official AQHI", "Local ECCC AQHI"), ("Model Adjusted R2", "Model adjusted R²")]):

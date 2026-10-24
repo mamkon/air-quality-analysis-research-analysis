@@ -90,7 +90,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Missing-data sensitivity: ozone variability and correlation'"
+                  "Value": "'Missing-data Sensitivity: Ozone Variability and Correlation'"
                 }
               }
             },
