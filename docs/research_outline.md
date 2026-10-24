@@ -1,9 +1,9 @@
-# Research aim, objectives and outline
+# Aim Objectives and Outline
 
 **Researcher: Mercy Mamkon Oyeleke**  
 **AIR QUALITY ANALYSIS RESEARCH ANALYSIS**
 
-## Research background and reasons
+## Research Background and Goals
 
 This research studies the relationship between weather and ground-level ozone. It focuses on Ontario so that the dashboard is relevant to communities across the province. Comparing selected locations makes local differences visible rather than using one result for the whole province.
 
