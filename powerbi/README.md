@@ -11,17 +11,21 @@ Keep its adjacent `.Report` and `.SemanticModel` folders together. If data have
 not yet been imported, select **Home → Refresh**. You can then use **File → Save
 As** to save a standalone `.pbix` copy.
 
-This is a native, editable Power BI report with seven pages, 23 import tables,
+This is a native, editable Power BI report with eight pages, 23 import tables,
 relationships, Ontario location filters and 40 DAX measures. It is not a screenshot
 or an embedded web dashboard. The source project uses Microsoft's PBIR/TMSL
 formats, which support version control in GitHub.
 
-**Desktop verification:** all seven pages now render in Power BI Desktop. Location,
+**Desktop verification:** all eight pages now render in Power BI Desktop. Location,
 alert-cutoff and weather-preset controls were exercised. The standalone `.pbix`
-contains the imported data and all 75 native visuals. See
+contains the imported data and all 83 native visuals. See
 `docs/powerbi_verification.md` for the checks and their limits.
 
-## Pages
+## Ontario Map
+
+The first page shows 47 selected Ontario locations. Filter by region, hover for ozone values and source dates, or select a bubble or table row to focus a location. Click again to clear. Larger dark blue bubbles mean higher modelled reference ozone, not population. A grey basemap and a values table avoid relying on colour alone. Missing official AQHI remains blank. Internet access is needed for Azure Maps tiles.
+
+## Other Pages
 
 1. **Overview:** dated ozone/forecast/AQHI/fit KPIs, prediction bounds and source age.
 2. **Historical Method:** separate NYC 1973 baseline, missing-data comparison,

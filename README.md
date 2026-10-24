@@ -6,9 +6,9 @@
 
 **Live Python app:** _Add your Streamlit Community Cloud URL after deployment._ The CI badge links to the latest Python 3.11 checks.
 
-**Power BI Desktop:** download [the standalone dashboard](powerbi/AIR%20QUALITY%20ANALYSIS%20RESEARCH%20ANALYSIS.pbix) to open the report with its data. For the editable source, open [AIR QUALITY ANALYSIS RESEARCH ANALYSIS.pbip](powerbi/AIR%20QUALITY%20ANALYSIS%20RESEARCH%20ANALYSIS.pbip), keeping the adjacent report/model folders together. See the [Power BI guide](powerbi/README.md) for opening, refreshing and saving a standalone `.pbix`. The native report contains seven editable pages, 23 import tables and 40 DAX measures. It uses a dated, portable research snapshot; the Python/Streamlit application is the live API version.
+**Power BI Desktop:** download [the standalone dashboard](powerbi/AIR%20QUALITY%20ANALYSIS%20RESEARCH%20ANALYSIS.pbix) to open the report with its data. For the editable source, open [AIR QUALITY ANALYSIS RESEARCH ANALYSIS.pbip](powerbi/AIR%20QUALITY%20ANALYSIS%20RESEARCH%20ANALYSIS.pbip), keeping the adjacent report/model folders together. See the [Power BI guide](powerbi/README.md) for opening, refreshing and saving a standalone `.pbix`. The native report contains eight editable pages, 23 import tables and 40 DAX measures. It uses a dated, portable research snapshot; the Python/Streamlit application is the live API version.
 
-**Verification status:** all seven native pages render in Power BI Desktop. Location, alert-cutoff and weather-preset controls were checked, and the standalone `.pbix` includes its data. See [Power BI verification](docs/powerbi_verification.md).
+**Verification status:** all eight native pages render in Power BI Desktop. Location, alert-cutoff and weather-preset controls were checked, and the standalone `.pbix` includes its data. See [Power BI verification](docs/powerbi_verification.md).
 
 **GitHub repository:** [mamkon/air-quality-analysis-research-analysis](https://github.com/mamkon/air-quality-analysis-research-analysis).
 

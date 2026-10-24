@@ -305,7 +305,7 @@ def page_frame(code: str, title: str, subtitle: str, location: bool = False) -> 
     """Set page dimensions, source context and optional Ontario selectors."""
     write_json(REPORT / "definition" / "pages" / code / "page.json", {
         "$schema": f"{SCHEMA}/item/report/definition/page/2.0.0/schema.json", "name": code,
-        "displayName": {"Overview": "Overview", "HistoricalMethod": "Historical Method", "OntarioModel": "Ontario Model", "DecisionFramework": "Decision Framework", "WhatIfSimulator": "What-If Simulator", "WhoUsesThis": "Who Uses This", "Limitations": "Limitations"}[code], "displayOption": "FitToPage", "height": 900, "width": 1280,
+        "displayName": {"Overview": "Overview", "HistoricalMethod": "Historical Method", "OntarioModel": "Ontario Model", "DecisionFramework": "Decision Framework", "WhatIfSimulator": "What-If Simulator", "WhoUsesThis": "Who Uses This", "Limitations": "Limitations", "OntarioMap": "Ontario Map"}[code], "displayOption": "FitToPage", "height": 900, "width": 1280,
         "objects": {"background": [{"properties": {"color": {"solid": {"color": literal("#F2F6F9")}}, "transparency": literal(0)}}]}})
     textbox(code, "Heading", title, 24, 14, 1232, 58, 25)
     textbox(code, "Subtitle", subtitle, 24, 74, 1232, 54, 11)
@@ -316,14 +316,14 @@ def page_frame(code: str, title: str, subtitle: str, location: bool = False) -> 
 
 
 def build_report() -> None:
-    """Create seven editable native report pages, including DAX what-if controls."""
-    codes = ["Overview", "HistoricalMethod", "OntarioModel", "DecisionFramework", "WhatIfSimulator", "WhoUsesThis", "Limitations"]
+    """Create eight editable native report pages, including DAX what-if controls."""
+    codes = ["OntarioMap", "Overview", "HistoricalMethod", "OntarioModel", "DecisionFramework", "WhatIfSimulator", "WhoUsesThis", "Limitations"]
     write_json(OUT / f"{NAME}.pbip", {"$schema": f"{SCHEMA}/pbip/pbipProperties/1.0.0/schema.json", "version": "1.0",
         "artifacts": [{"report": {"path": REPORT.name}}], "settings": {"enableAutoRecovery": True}})
     write_json(REPORT / "definition.pbir", {"$schema": f"{SCHEMA}/item/report/definitionProperties/2.0.0/schema.json",
         "version": "4.0", "datasetReference": {"byPath": {"path": "../" + MODEL.name}}})
     write_json(REPORT / "definition" / "version.json", {"$schema": f"{SCHEMA}/item/report/definition/versionMetadata/1.0.0/schema.json", "version": "2.0.0"})
-    write_json(REPORT / "definition" / "pages" / "pages.json", {"$schema": f"{SCHEMA}/item/report/definition/pagesMetadata/1.0.0/schema.json", "pageOrder": codes, "activePageName": "Overview"})
+    write_json(REPORT / "definition" / "pages" / "pages.json", {"$schema": f"{SCHEMA}/item/report/definition/pagesMetadata/1.0.0/schema.json", "pageOrder": codes, "activePageName": "OntarioMap"})
     write_json(REPORT / "definition" / "report.json", {"$schema":"https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.2.0/schema.json","themeCollection":{"baseTheme":{"name":"CY26SU04","reportVersionAtImport":{"visual":"2.8.0","report":"3.2.0","page":"2.3.1"},"type":"SharedResources"}},"objects":{"section":[{"properties":{"verticalAlignment":{"expr":{"Literal":{"Value":"'Top'"}}}}}]},"resourcePackages":[{"name":"SharedResources","type":"SharedResources","items":[{"name":"CY26SU04","path":"BaseThemes/CY26SU04.json","type":"BaseTheme"}]}],"settings":{"useStylableVisualContainerHeader":True,"exportDataMode":"AllowSummarized","defaultDrillFilterOtherVisuals":True,"allowChangeFilterTypes":True,"useEnhancedTooltips":True,"useDefaultAggregateDisplayName":True}})
     page_frame("Overview", "Ontario Air Quality | Research Overview", "47 Ontario locations • Select one location • Forecast and source dates remain visible • Native Power BI / DAX", True)
     card("Overview", "ForecastDate", "Snapshot Forecast Date", 720, 140, 536, "Forecast date (dated snapshot)")
@@ -378,13 +378,37 @@ def build_report() -> None:
     table_visual("Limitations", "ProvenanceTable", "Provenance", ["Location", "Source", "RetrievedUTC", "URL"], 24, 510, 1232, 292, "Original source timestamps and attribution by location")
 
 
+def map_coordinate(column: str) -> dict:
+    """Use the reviewed coordinate's average within each unique location group."""
+    value = field("Locations", column)
+    value["field"] = {"Aggregation": {"Expression": value["field"], "Function": 1}}
+    value["queryRef"] = "Average(Locations." + column + ")"
+    value["nativeQueryRef"] = "Average " + column
+    return value
+
+
+def build_map_page() -> None:
+    """Map reviewed coordinates with ozone-sized bubbles and a text alternative."""
+    page_frame("OntarioMap", "Ontario Ozone Map", "Compare 47 selected Ontario locations. Bubble size shows latest CAMS reference ozone in ppb; source dates are shown for each location.")
+    slicer("OntarioMap", "MapRegionSelector", "Locations", "Region", 24, 142, 400, "Filter By Ontario Region")
+    textbox("OntarioMap", "MapInstructions", "Hover over a bubble for the location, ozone value and source time. Select a location in the table to focus the map; click again to clear.", 448, 142, 808, 78, 11)
+    visual("OntarioMap", "OntarioBubbleMap", "azureMap", 24, 238, 800, 530, "Latest Reference Ozone By Location (ppb)",
+           {"Category": [field("Locations", "Location")], "X": [map_coordinate("Longitude")], "Y": [map_coordinate("Latitude")],
+            "Size": [field(MEASURES, "Latest Ozone ppb", True)],
+            "Tooltips": [field("Locations", "Region"), field("LocationSummary", "LatestOzoneTime"), field(MEASURES, "Official AQHI", True)]},
+           json.loads(r'''{"mapControls":[{"properties":{"zoom":{"expr":{"Literal":{"Value":"3.86D"}}},"centerLatitude":{"expr":{"Literal":{"Value":"49.61173715460902D"}}},"centerLongitude":{"expr":{"Literal":{"Value":"-84.60811945D"}}}}}],"dataPoint":[{"properties":{}}],"legend":[{"properties":{"show":{"expr":{"Literal":{"Value":"false"}}}}}],"bubbleLayer":[{"properties":{"maxRadius":{"expr":{"Literal":{"Value":"12L"}}},"minBubbleRadius":{"expr":{"Literal":{"Value":"4L"}}},"fillColor":{"solid":{"color":{"expr":{"Literal":{"Value":"'#005A8D'"}}}}}}}]}'''))
+    table_visual("OntarioMap", "MapLocationTable", "LocationSummary", ["Location", "LatestOzone", "LatestOzoneTime", "AQHI"], 848, 238, 408, 530, "Locations, Ozone (ppb), Source Time and AQHI")
+    textbox("OntarioMap", "MapContext", "Larger bubbles mean higher ozone, not a larger population. The map uses saved source readings from 23 October 2026; times differ by location. CAMS is modelled reference data. AQHI is a separate official index and remains blank where unavailable.", 24, 782, 1232, 50, 10)
+
+
 def main() -> None:
     """Build all data exports, semantic model, DAX measures and seven report pages."""
     OUT.mkdir(exist_ok=True)
     prepare_data()
     build_model()
     build_report()
-    print(f"Built {NAME}.pbip: {len(TABLES)} native tables, {len(dax_measures())} measures, seven pages.")
+    build_map_page()
+    print(f"Built {NAME}.pbip: {len(TABLES)} native tables, {len(dax_measures())} measures, eight pages.")
 
 
 if __name__ == "__main__":

@@ -12,7 +12,7 @@ PBI = Path(__file__).resolve().parents[1] / "powerbi"
 
 
 def test_native_project_structure() -> None:
-    """All seven native pages and their semantic model references are present."""
+    """All eight native pages and their semantic model references are present."""
     shortcut = next(PBI.glob("*.pbip"))
     report = PBI / json.loads(shortcut.read_text())["artifacts"][0]["report"]["path"]
     reference = json.loads((report / "definition.pbir").read_text())["datasetReference"]["byPath"]["path"]
@@ -22,7 +22,7 @@ def test_native_project_structure() -> None:
     measures = next(t["measures"] for t in model["model"]["tables"] if t["name"] == "LocationSummary")
     assert len(measures) == 40
     metadata = json.loads((report / "definition" / "pages" / "pages.json").read_text())
-    assert len(metadata["pageOrder"]) == 7
+    assert len(metadata["pageOrder"]) == 8
     for page in metadata["pageOrder"]:
         assert (report / "definition" / "pages" / page / "page.json").exists()
         assert list((report / "definition" / "pages" / page / "visuals").glob("*/visual.json"))
@@ -67,3 +67,28 @@ def test_native_slicers_select_without_hiding_other_locations() -> None:
         selection = visual["visual"]["objects"]["general"][0]["properties"]["filter"]["filter"]
         assert selection["From"][0]["Entity"] == "Locations"
         assert selection["Where"][0]["Condition"]["In"]["Values"] == [[{"Literal": {"Value": "'Toronto'"}}]]
+
+
+def test_ontario_map_uses_reviewed_coordinates_and_source_values() -> None:
+    """Map points use exact coordinates, a per-location measure and dated context."""
+    report = next(PBI.glob("*.Report"))
+    page = report / "definition/pages/OntarioMap"
+    data = json.loads((page / "visuals/OntarioBubbleMap/visual.json").read_text(encoding="utf-8"))
+    query = data["visual"]["query"]["queryState"]
+    assert data["visual"]["visualType"] == "azureMap"
+    for role, column in {"X": "Longitude", "Y": "Latitude", "Category": "Location"}.items():
+        expression = query[role]["projections"][0]["field"]
+        if role in {"X", "Y"}:
+            assert expression["Aggregation"]["Function"] == 1
+            expression = expression["Aggregation"]["Expression"]
+        field = expression["Column"]
+        assert field["Expression"]["SourceRef"]["Entity"] == "Locations"
+        assert field["Property"] == column
+    assert query["Size"]["projections"][0]["field"]["Measure"]["Property"] == "Latest Ozone ppb"
+    assert "LatestOzoneTime" in json.dumps(query["Tooltips"])
+    assert (page / "visuals/MapLocationTable/visual.json").exists()
+    locations = pd.read_csv(PBI / "data/Locations.csv").set_index("Location")
+    summary = pd.read_csv(PBI / "data/LocationSummary.csv").set_index("Location")
+    assert len(locations) == 47 and set(locations.index) == set(summary.index)
+    assert locations.Latitude.between(41, 57).all()
+    assert locations.Longitude.between(-96, -73).all()
