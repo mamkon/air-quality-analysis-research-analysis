@@ -14,6 +14,14 @@
 
 This research uses weather data to estimate afternoon ozone in 47 Ontario locations. It asks a practical question: can weather patterns help teams prepare for days when ozone may be higher?
 
+### Research aim and objectives
+
+This research examines how temperature, wind speed and sunlight relate to ground-level ozone, and whether these relationships can help estimate afternoon ozone in selected Ontario locations.
+
+The objectives are to understand the data, explain missing-data choices, explore weather and ozone relationships, compare regression methods, check predictions on later days, and explain practical uses and limitations.
+
+See the [full research outline](docs/research_outline.md) for the reasons, research questions and section plan.
+
 ### Why this subject, and who could use it?
 
 This research focuses on **air quality and public-health planning** to turn environmental data into information that can support practical planning. Ontario was selected to make the work relevant to communities across the province. Comparing 47 locations shows local differences instead of treating the whole province as one place. Ground-level ozone was selected because weather helps explain how it forms and moves. Sunlight helps gases in the air react to form ozone; temperature and wind also matter. See [ECCC's explanation](https://www.canada.ca/en/environment-climate-change/services/air-quality-health-index/weather.html).
@@ -41,7 +49,7 @@ For example, it checks the pattern learned from previous warm, sunny days, toget
 
 Ontario training ozone comes from CAMS through Open-Meteo: these are model estimates, not direct station readings. The project predicts ozone, not hospital visits or individual illness. The 1973 New York data explain the method only; recent Ontario data train the modern models. Use official AQHI and local advice for health decisions.
 
-Read the [plain-English guide](docs/plain_language_guide.md) for examples and simple definitions. Technical details follow below.
+Read the [plain-English guide](docs/plain_language_guide.md) for examples and simple definitions. Technical details follow below. The [reviewed research notebook](notebooks/research_reviewed.ipynb) contains the cleaned outline and executed historical analysis.
 
 ### Key findings — generated from saved real-source data
 

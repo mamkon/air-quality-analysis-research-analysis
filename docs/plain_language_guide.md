@@ -2,6 +2,14 @@
 
 **Research by Mercy Mamkon Oyeleke, Data Analytics & Business Intelligence Consultant.**
 
+## Research aim and objectives
+
+This research examines how temperature, wind speed and sunlight relate to ground-level ozone, and whether these relationships can help estimate afternoon ozone in selected Ontario locations.
+
+The objectives are to understand the data, explain missing-data choices, explore weather and ozone relationships, compare regression methods, check predictions on later days, and explain practical uses and limitations.
+
+See the [full research outline](research_outline.md) for the reasons, research questions and section plan.
+
 ## Why air quality in Ontario?
 
 This research focuses on environmental analytics and public-health planning. Its purpose is to turn weather and ozone data into information that is easier to understand and use for planning.
