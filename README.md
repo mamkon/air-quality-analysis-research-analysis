@@ -1,18 +1,106 @@
-# AIR QUALITY ANALYSIS RESEARCH ANALYSIS
+# Ontario Air Quality Predictive Analytics & Decision-Support Framework
 
-## Ontario Air Quality — Power BI Desktop and Reproducible Python Analysis
+**Predictive Analytics | Public Health Analytics | Decision Support | Risk Modelling**
 
-![Python](https://img.shields.io/badge/Python-3.11-3776AB) ![Power BI](https://img.shields.io/badge/Power_BI-Desktop-F2C811) ![Streamlit](https://img.shields.io/badge/Streamlit-dashboard-FF4B4B) [![CI](https://github.com/mamkon/air-quality-analysis-research-analysis/actions/workflows/ci.yml/badge.svg)](https://github.com/mamkon/air-quality-analysis-research-analysis/actions/workflows/ci.yml) ![License](https://img.shields.io/badge/license-MIT-green)
+## Overview
 
-**Live Python app:** _Add your Streamlit Community Cloud URL after deployment._ The CI badge links to the latest Python 3.11 checks.
+This research explores how predictive analytics can support environmental and public-health planning.
 
-**Power BI Desktop:** download [the standalone dashboard](powerbi/AIR%20QUALITY%20ANALYSIS%20RESEARCH%20ANALYSIS.pbix) to open the report with its data. For the editable source, open [AIR QUALITY ANALYSIS RESEARCH ANALYSIS.pbip](powerbi/AIR%20QUALITY%20ANALYSIS%20RESEARCH%20ANALYSIS.pbip), keeping the adjacent report/model folders together. See the [Power BI guide](powerbi/README.md) for opening, refreshing and saving a standalone `.pbix`. The native report contains eight editable pages, 23 import tables and 40 DAX measures. It uses a dated, portable research snapshot; the Python/Streamlit application is the live API version.
+Using data for **47 selected Ontario locations**, I developed a research solution that combines Python statistical analysis with an interactive Power BI dashboard. The work brings together geospatial comparison, weather-based ozone prediction, chronological model validation, uncertainty assessment, decision analysis and scenario modelling.
 
-**Verification status:** all eight native pages render in Power BI Desktop. Location, alert-cutoff and weather-preset controls were checked, and the standalone `.pbix` includes its data. See [Power BI verification](docs/powerbi_verification.md).
+The purpose is to move from describing conditions to asking what might happen next, how much confidence to place in a prediction, and what further evidence is needed before acting. The dashboard is a dated research snapshot, not an operational early-warning system or an official health advisory.
 
-**GitHub repository:** [mamkon/air-quality-analysis-research-analysis](https://github.com/mamkon/air-quality-analysis-research-analysis).
+## Business Problem
 
-This research uses weather data to estimate afternoon ozone in 47 Ontario locations. It asks a practical question: can weather patterns help teams prepare for days when ozone may be higher?
+Air-quality events raise planning questions for public-health teams, municipalities, schools, outdoor employers and healthcare organisations. A historical chart can show what happened, but planning also requires questions such as:
+
+- **What might happen next?** Estimate afternoon ozone using weather conditions.
+- **How reliable is the estimate?** Examine later-day validation, errors and prediction bounds.
+- **What responses should be considered?** Explore the trade-off between missed events and false alarms.
+- **What changes under another scenario?** Compare illustrative temperature, wind and solar-radiation inputs.
+
+This research explores those analytical questions. It does not establish the clinical effectiveness of a response or replace official AQHI guidance.
+
+## Explore the Research
+
+- [Project Website](https://mamkon.github.io/air-quality-analysis-research-analysis/)
+- [Download the Power BI Dashboard](powerbi/AIR%20QUALITY%20ANALYSIS%20RESEARCH%20ANALYSIS.pbix) — open in Power BI Desktop and select one location on Overview.
+- [Power BI Opening and Refresh Guide](powerbi/README.md)
+- [Research Notebook](notebooks/research_reviewed.ipynb)
+- [Plain Language Guide](docs/plain_language_guide.md)
+- [Full Research Outline](docs/research_outline.md)
+
+Power BI presents the imported snapshot from sources retrieved on **23 October 2026**. The Python/Streamlit application contains the API integration; it requires separate deployment to provide a hosted live app. GitHub Pages presents the research and downloads, rather than running Power BI.
+
+## Skills Demonstrated
+
+| Area | Evidence in This Research |
+|---|---|
+| Predictive Analytics and Forecasting | Weather-based multiple linear regression for afternoon ozone |
+| Time-Series Data Preparation | Time-zone-aware hourly-to-daily alignment, chronological splitting and rolling error assessment; the fitted model is OLS, not a dedicated time-series forecasting model |
+| Statistical Validation and Uncertainty | Later-day holdout evaluation, residual diagnostics and conditional 95% OLS prediction intervals |
+| Risk Assessment and Decision Support | Threshold-based event evaluation, precision/recall and missed-event versus false-alarm trade-offs |
+| Scenario Modelling | What-if weather inputs, prediction bounds and training-range checks |
+| Power BI, DAX and Power Query | Native visuals, measures, import transformations, relationships and scenario calculations |
+| ETL and Data Modelling | API integration, unit conversion, missing-data handling, source timestamps and reproducible exports |
+| Geospatial Analysis and Azure Maps | Reviewed location coordinates, regional filtering and comparison across selected Ontario points |
+| Performance Measurement and Data Storytelling | Model and decision metrics, plain-language explanations, dashboard formatting and source transparency |
+| Public Health and Healthcare Analytics | Framing environmental planning questions and explaining potential healthcare adaptations, without claiming patient-outcome validation |
+
+## Dashboard Capabilities
+
+### Ontario-Wide Air Quality Monitoring
+
+The map and location selectors support comparison across selected points in Ontario and show geographic variation in modelled ozone reference conditions. The 47 locations do not represent complete monitoring coverage of every community.
+
+### Forecasting and Risk Outlook
+
+Weather-based models estimate afternoon ozone, with upper and lower prediction bounds shown alongside the estimates. These bounds are conditional on OLS assumptions and do not include all weather, emissions or CAMS uncertainty. Official AQHI and illustrative ozone thresholds remain separate measures.
+
+### Model Validation and Performance Assessment
+
+Chronological validation separates training days from later testing days to reduce optimistic evaluation. The validation target is modelled CAMS reference ozone. Retrospective archive weather is not equivalent to testing archived forecast vintages, and short seasonal windows do not establish year-round forecast performance.
+
+### Decision-Support Framework
+
+The research examines event thresholds, missed events and false alarms to show how model evaluation connects to planning choices. Unsupported precision or recall remains undefined when the data contain no relevant events. The framework illustrates trade-offs; it does not prescribe or validate operational health actions.
+
+### Scenario Planning and What-If Analysis
+
+The simulator explores how different temperature, wind and sunlight inputs change estimated ozone. It includes prediction bounds and flags inputs outside the training range. These are conditional model scenarios, not causal estimates of the effect of changing the environment.
+
+## Healthcare and Public Health Relevance
+
+Although this research uses environmental data, its analytical workflow offers a starting point for exploring other public-health and healthcare questions:
+
+- Disease surveillance and population-health monitoring.
+- Emergency department demand forecasting.
+- Healthcare resource planning.
+- Early-warning and risk-prediction research.
+
+Each adaptation would require suitable domain data, governance, outcome definitions and independent validation. **This research contains no patient data and does not demonstrate predictions of illness, hospital demand or individual health risk.**
+
+My interest is in using predictive analytics to help healthcare organisations identify emerging risks, understand patterns in complex data and support evidence-based planning.
+
+## Target Audience and Stakeholders
+
+The primary audience includes public-health analysts, environmental researchers, municipal analytics teams, healthcare planning professionals and hiring managers assessing analytical and decision-support skills.
+
+Wider stakeholders include Ontario residents, people more vulnerable to poor air quality, schools and outdoor employers. Their needs motivate clear communication; real health and activity decisions should follow official AQHI and public-health advice.
+
+## Key Lessons Learned
+
+- Prediction accuracy alone does not establish readiness for action.
+- Validation must be transparent about dates, targets and data limitations.
+- Decision-makers need uncertainty information alongside a forecast.
+- Analytics becomes more useful when model performance is connected to planning trade-offs.
+- Clear explanations, accessible visuals and thoughtful formatting are part of communicating the research.
+
+## About the Author
+
+I am **Mercy Mamkon Oyeleke**, a Data Analytics and Business Intelligence Consultant with more than 15 years of experience across banking, finance, analytics and business intelligence. Through analytics consulting and graduate studies in Big Data and Predictive Analytics, I focus on transforming complex data into useful insights, with an emerging interest in healthcare and public health.
+
+## Research Evidence and Reproducibility
 
 ### Research Aim and Objectives
 
@@ -67,10 +155,6 @@ These are dated snapshot findings, not promised live performance. Regenerate the
 
 ![Executive overview](docs/screenshot.png)
 
-### Business Question
-
-Can temperature, wind and solar radiation predict high-ozone days well enough to trigger early public-health action, and what should decision-makers do? The dashboard supports evaluation of that question; it does not claim the current model is ready to issue alerts.
-
 ### Sources and Attribution
 
 | Source | Endpoint / provenance | Use |
@@ -111,10 +195,6 @@ Illustrative afternoon-mean tiers: Good <50; Moderate 50–<60; High 60–<70; V
 The [2025 Canadian CAAQS](https://ccme.ca/en/air-quality-report) ozone standard is 60 ppb; [US EPA NAAQS](https://www.epa.gov/ground-level-ozone-pollution/ozone-national-ambient-air-quality-standards-naaqs) is 70 ppb. Both are based on the three-year average of the annual fourth-highest daily maximum eight-hour average. The dashboard target and tiers do not establish compliance or replace official AQHI guidance.
 
 Prioritise recall during screening design because missed events can harm vulnerable groups; weigh false-alarm fatigue and operational cost with partners. The slider explores held-out behaviour, not an independently validated choice of policy. False-alarm rate means FP/(FP+TN); zero denominators remain missing. No health outcome data are used to quantify benefit.
-
-### Who Uses This
-
-Public health and hospitals can assess communications and respiratory capacity planning. Government/environment, ESG consulting, insurance, utilities, urban planning/transit and pharmacy teams can examine monitoring, exposure and preparedness workflows. The **Who Uses This** page maps example organisations and job titles to evidence of skills; these are illustrative, not endorsements or current vacancies.
 
 ### Architecture
 
@@ -170,9 +250,3 @@ Default tests need no internet: source JSON mocks cover every API, including out
 Correlation is not causation. Omitted emissions, traffic, humidity and transport, modelled ozone, short seasonal training windows, missingness, serial dependence and weather forecast error limit operational use. An interval conditional on OLS assumptions is not a calibrated health-risk bound. Training R² is not an alert-readiness measure.
 
 Next: station-level ECCC validation, rolling-origin forecast evaluation, governed ER-outcome linkage, SARIMAX and gradient-boosting comparisons, calibrated alerts and opt-in notifications. Check official AQHI and local public-health advice for real health decisions.
-
-### Skills Demonstrated
-
-API integration and resilience; pandas time alignment and unit discipline; statistical inference and diagnostics; chronological model validation; accessible Plotly/Streamlit communication; decision analytics; reproducible testing and CI; transparent limitations.
-
-**Author:** Mercy Mamkon Oyeleke, Data Analytics & Business Intelligence Consultant · [LinkedIn — add profile URL](https://www.linkedin.com/)
